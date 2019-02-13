@@ -36,7 +36,9 @@ img { max-width: 100%; height:auto; }
 /*header*/
 header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; top: 0; left: 0; z-index: 3;}
 .h {
-    &-logo {font-size: 30px; opacity: 0.9; color: #fff;}
+    &-logo {font-size: 30px; opacity: 0.9; color: #fff;
+        &:hover, &:focus {color: #fff;text-decoration: none;}
+    }
     &-menu {
         ul { list-style: none; margin: 0; padding: 0; text-align: center; 
             li { display: inline-block; margin: 0 28px; vertical-align: top; 
@@ -46,8 +48,8 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
             }  
         }      
     } 
-    &-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px;} 
-    &-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; 
+    &-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3;} 
+    &-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; opacity: 0.3;
         span { display: block; background: #fff; height: 1px; width: 100%; margin: 7px 0; }
     } 
     &-order { display: block; color: #fff; border-radius: 20px; max-width: 140px; text-align: center; float: right; width: 100%; padding: 7px 10px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; opacity: 1; @include trans(0.3s);
@@ -63,16 +65,14 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
    
 }
 
-@media(max-width: 991px) and (min-width: 768px){
 
-}
-@media(max-width: 767px) {
+@media(max-width: 991px) {
     header{padding: 22px 7px; z-index: 200; 
        
         .h {
             &-pc {display: none;}
             &-mob {display: block;
-                &-logo {font-size: 24px;font-weight: 700;color: #fff; 
+                &-logo {font-size: 24px;font-weight: 700;color: #fff; text-align: center; display: block;
                     &:hover, &:focus {color: #fff;text-decoration: none;}
                 }
                 &-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; 
@@ -102,10 +102,18 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
 }
 .fix-btns { position: fixed; bottom: 68px; right: 66px; z-index: 3; display: block; 
     a { width: 24px; height: 12px; display: block; 
-        &.top { margin-bottom: 37px; background: url('../img/arr-side.svg')no-repeat 50% 50%; transform: rotate(180deg); }
-        &.bottom { margin-top: 37px; background: url('../img/arr-side.svg')no-repeat 50% 50%;}        
+        &.top { background: url('../img/arr-side.svg')no-repeat 50% 50%; transform: rotate(180deg); }
+        &.bottom { margin-top: 74px;  background: url('../img/arr-side.svg')no-repeat 50% 50%;}        
     }
 } 
+@media(max-width: 1199px) and (min-width: 992px){
+    .screen-btm {display: none;} 
+    .fix-btns { display: none; } 
+}
+@media(max-width: 991px) {
+    .screen-btm {display: none;} 
+    .fix-btns { display: none; } 
+}
 
 /*footer*/
 footer { } 
@@ -115,7 +123,7 @@ footer { }
 @media(max-width: 991px) and (min-width: 768px){
     
 }
-@media(max-width: 767px) {
+@media(max-width: 991px) {
     footer {}
     .f{}
     .hidden-xs {display: none!important;}
