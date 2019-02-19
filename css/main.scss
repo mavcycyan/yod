@@ -115,6 +115,16 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
     .fix-btns { display: none; } 
 }
 
+#p_prldr{position: fixed; left: 0; top: 0; right:0; bottom:0; background: rgba(0,0,0,1); z-index: 30;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{width: 100%; max-width: 526px; height: 58px; position: absolute; left: 50%; top: 50%; color: #fff; text-align: center; transform: translate(-50%, -50%);}
+
+@media(max-width: 991px){
+    .contpre{   max-width: 280px;}
+}
+
 /*footer*/
 footer { padding: 3vw 2.3vw; }
 .f {
