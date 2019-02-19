@@ -50,7 +50,7 @@
                    </div>
                </div>
                <div class="col-12 col-md-6 col-lg-4 col-lg-3">
-                   <button class="h-auth"></button>
+                   <button class="h-auth ath"></button>
                    <button class="h-btn"><span></span><span></span></button>
                    <a href="#" class="h-order"><span>Заказать</span></a>
                </div>
@@ -67,7 +67,7 @@
                    <a href="#" class="h-mob-logo">YOD</a>
                </div>
                <div class="col-4">
-                   <button class="h-mob-auth"></button>
+                   <button class="h-mob-auth ath"></button>
                </div>
            </div>
        </div>
@@ -412,6 +412,61 @@
     </div>
 </footer>
 
+<div class="fix-btns">
+    <a href="#" class="top"></a>
+    <a href="" class="bottom"></a>
+</div>
+
+<div style="display:none;">
+    <div id="modal_auth" class="modal_auth" style="display: block;">
+        <div class="clearfix"></div>
+        <div class="container">
+            <form action="" method="" class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="modal_auth-bl">
+                        <input name="mail" type="text" placeholder="E-mail" required />
+                     </div> 
+                    <div class="modal_auth-bl">
+                        <input name="pass" type="password" placeholder="Пароль" required /> 
+                     </div>  
+                    <div class="modal_auth-bl">
+                        <button type="submit"><span>Войти</span></button> 
+                        <a href="#" class="modal_auth-bl-forg_pass fp">Напомнить пароль</a> 
+                     </div>                                            
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="modal_auth-ttl">Вход</div>
+                </div>               
+            </form>
+        </div>			
+    </div>    
+</div>
+
+<div style="display:none;">
+    <div id="modal_fp" class="modal_auth" style="display: block;">
+        <div class="clearfix"></div>
+        <div class="container">
+            <form action="" method="" class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="modal_auth-bl">
+                        <input name="mail" type="text" placeholder="E-mail" required />
+                     </div> 
+                    <div class="modal_auth-bl">
+                        <div class="modal_auth-bl-txt">На какой Email отправить ссылку<br>для восстановления?</div>
+                     </div>  
+                    <div class="modal_auth-bl">
+                        <button type="submit"><span>Восстановить</span></button> 
+                        <a href="#" class="modal_auth-bl-forg_pass ath">Я вспомнил пароль</a> 
+                     </div>                                            
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="modal_auth-ttl">Восстановление пароля</div>
+                </div>               
+            </form>
+        </div>			
+    </div>    
+</div>
+
 <div id="p_prldr">
     <div class="contpre">
 
@@ -434,6 +489,27 @@
     </div>
 </div>
 
+<script>
+jQuery(document).ready(function($){	
+    $(".ath").fancybox({ 
+        href: '#modal_auth', 
+        wrapCSS: 'modal_auth_wp',
+        minWidth: '100%',
+        margin: [0, 0, 0, 0],
+        padding: [0, 0, 0, 0],
+        autoScale: true
+    });
+    $(".fp").fancybox({ 
+        href: '#modal_fp', 
+        wrapCSS: 'modal_auth_wp',
+        minWidth: '100%',
+        margin: [0, 0, 0, 0],
+        padding: [0, 0, 0, 0],
+        autoScale: true
+    });
+});
+</script>
+
 <script type="text/javascript">$(window).on('load', function () {
     var $preloader = $('#p_prldr'),
         $svg_anm   = $preloader.find('.svg_anm');
@@ -441,11 +517,6 @@
     $preloader.delay(1000).fadeOut('slow');
     $('#svg_pr rect').animate({ width: 526 }, 1000, function() { });
 });</script>
-
-<div class="fix-btns">
-    <a href="#" class="top"></a>
-    <a href="" class="bottom"></a>
-</div>
 
 <script>
 $('.screen-btm-lang').click(function(){

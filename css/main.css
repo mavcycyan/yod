@@ -17,9 +17,9 @@ header { padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; t
 .h-menu ul li:last-child { margin-right: 0; }
 .h-menu ul li a { color: #fff; opacity: 0.3; font-size: 20px; font-size: 1vw; }
 .h-menu ul li a:hover, .h-menu ul li a:focus { opacity: 1; text-decoration: none; }
-.h-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3; }
+.h-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3; cursor: pointer; }
 .h-auth:hover, .h-auth:focus { opacity: 1; }
-.h-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; opacity: 0.3; }
+.h-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; cursor: pointer; opacity: 0.3; }
 .h-btn span { display: block; background: #fff; height: 1px; width: 100%; margin: 7px 0; }
 .h-btn:hover, .h-btn:focus { opacity: 1; box-shadow: none; outline: 0; }
 .h-order { display: block; color: #fff; border-radius: 20px; max-width: 140px; text-align: center; float: right; width: 100%; padding: 7px 10px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; opacity: 1; transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; -ms-transition: 0.3s; }
@@ -49,6 +49,39 @@ body:not(.body-main) .h-btn span { background: #000; }
   body:not(.body-main) .h-mob-logo { color: #000; }
   body:not(.body-main) .h-mob-btn span { background: #000; }
   body:not(.body-main) .h-mob-auth { background: url(../img/h-auth-black.svg) no-repeat 50% 50%; } }
+/*modal_auth*/
+.modal_auth { padding-top: 225px; }
+.modal_auth_wp { min-height: 100vh; background: #000; }
+.modal_auth_wp .fancybox-close { position: absolute; right: 15%; display: block; top: 185px; color: #fff; background: none; }
+.modal_auth_wp .fancybox-close:after { content: ''; font-size: 30px; background: url(../img/cross.svg); background-size: 19px 19px; width: 19px; height: 19px; display: block; }
+.modal_auth_wp .fancybox-skin { min-height: 100vh; background: #000; }
+.modal_auth_wp .fancybox-outer { min-height: 100vh; }
+.modal_auth_wp .fancybox-inner { min-height: 100vh; }
+.modal_auth-ttl { font-size: 30px; }
+.modal_auth-bl { margin-bottom: 72px; }
+.modal_auth-bl label { height: 26px; color: #fff; display: block; margin: 0; }
+.modal_auth-bl input { border: 0; border-bottom: 1px solid #ffffff80; font-size: 32px; color: #fff; background: transparent; padding: 0; padding-bottom: 9px; margin-top: 9px; display: block; width: 100%; max-width: 360px; }
+.modal_auth-bl input::-webkit-input-placeholder { color: #fff; opacity: 0.5; }
+.modal_auth-bl input::-moz-placeholder { color: #fff; opacity: 0.5; }
+.modal_auth-bl input:-moz-placeholder { color: #fff; opacity: 0.5; }
+.modal_auth-bl input:-ms-input-placeholder { color: #fff; opacity: 0.5; }
+.modal_auth-bl button { display: inline-block; color: #fff; text-align: center; width: 100%; max-width: 178px; border: 0; cursor: pointer; border-radius: 28px; padding: 16px 10px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; opacity: 1; transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; -ms-transition: 0.3s; }
+.modal_auth-bl button:before { content: ''; width: calc(100% - 2px); height: calc(100% - 2px); top: 1px; left: 1px; background: #000; display: block; position: absolute; border-radius: 28px; z-index: 1; }
+.modal_auth-bl button span { position: relative; z-index: 2; }
+.modal_auth-bl button:hover, .modal_auth-bl button:focus { color: #fff; text-decoration: none; opacity: 0.5; transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; -ms-transition: 0.3s; }
+.modal_auth-bl-forg_pass { display: inline-block; margin-left: 40px; font-size: 16px; color: #fff; opacity: 0.5; }
+.modal_auth-bl-forg_pass:hover, .modal_auth-bl-forg_pass:focus { opacity: 1; text-decoration: none; color: #fff; }
+.modal_auth-bl-txt { font-size: 16px; opacity: 0.5; }
+
+/*modal_auth*/
+@media (max-width: 991px) { .modal_auth { padding-top: 125px; }
+  .modal_auth-bl { margin: 0 7px 60px !important; }
+  .modal_auth-bl input { max-width: 100%; text-align: center; }
+  .modal_auth-bl-forg_pass { display: block; margin: 0; text-align: center; }
+  .modal_auth-bl button { display: block; margin: 0 auto 30px; }
+  .modal_auth-bl-txt { text-align: center; }
+  .modal_auth_wp .fancybox-close { top: 85px; }
+  .modal_auth-ttl { text-align: center; font-size: 20px; margin-bottom: 50px; } }
 .body-main { background: #0B0B0B; color: #fff; }
 
 /*main*/

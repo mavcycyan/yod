@@ -50,10 +50,10 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
             }  
         }      
     } 
-    &-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3;
+    &-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3; cursor: pointer;
         &:hover, &:focus {opacity: 1;}
     } 
-    &-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; opacity: 0.3;
+    &-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; cursor: pointer; opacity: 0.3;
         span { display: block; background: #fff; height: 1px; width: 100%; margin: 7px 0; }
         &:hover, &:focus {opacity: 1;box-shadow: none; outline: 0;}
     } 
@@ -118,6 +118,7 @@ body:not(.body-main) {
     }
 }
 
+@import "_modal_auth";
 @import "_index";
 @import "_fonts";
 @import "_case";
