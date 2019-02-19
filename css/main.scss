@@ -28,7 +28,7 @@ body {font-family: 'BrutalType', sans-serif; font-size: 16px;font-weight: 400;ba
 img { max-width: 100%; height:auto; }
 
 @media(min-width: 1200px){
-    .container { max-width: 68vw;}
+    /*.container { max-width: 68vw;}*/
     .main-page .container { max-width: 85vw;}
 }
 .container-fluid {position: relative;}
@@ -48,9 +48,12 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
             }  
         }      
     } 
-    &-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3;} 
+    &-auth { background: url(../img/h-auth.svg) no-repeat 50% 50%; background-size: cover; border: none; width: 20px; height: 20px; padding: 0; display: block; float: left; margin-top: 6px; margin-right: 37px; opacity: 0.3;
+        &:hover, &:focus {opacity: 1;}
+    } 
     &-btn { border: none; width: 32px; height: 32px; padding: 0; display: block; float: left; background: none; opacity: 0.3;
         span { display: block; background: #fff; height: 1px; width: 100%; margin: 7px 0; }
+        &:hover, &:focus {opacity: 1;box-shadow: none; outline: 0;}
     } 
     &-order { display: block; color: #fff; border-radius: 20px; max-width: 140px; text-align: center; float: right; width: 100%; padding: 7px 10px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; opacity: 1; @include trans(0.3s);
         &:before { content: ''; width: calc(100% - 2px); height: calc(100% - 2px); top: 1px; left: 1px; background: #000; display: block; position: absolute; border-radius: 20px;z-index: 1; }
