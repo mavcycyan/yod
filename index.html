@@ -489,34 +489,6 @@
     </div>
 </div>
 
-<script>
-jQuery(document).ready(function($){	
-    $(".ath").fancybox({ 
-        href: '#modal_auth', 
-        wrapCSS: 'modal_auth_wp',
-        minWidth: '100%',
-        margin: [0, 0, 0, 0],
-        padding: [0, 0, 0, 0],
-        autoScale: true
-    });
-    $(".fp").fancybox({ 
-        href: '#modal_fp', 
-        wrapCSS: 'modal_auth_wp',
-        minWidth: '100%',
-        margin: [0, 0, 0, 0],
-        padding: [0, 0, 0, 0],
-        autoScale: true
-    });
-});
-</script>
-
-<script type="text/javascript">$(window).on('load', function () {
-    var $preloader = $('#p_prldr'),
-        $svg_anm   = $preloader.find('.svg_anm');
-    $svg_anm.fadeOut();
-    $preloader.delay(1000).fadeOut('slow');
-    $('#svg_pr rect').animate({ width: 526 }, 1000, function() { });
-});</script>
 
 <script>
 $('.screen-btm-lang').click(function(){
@@ -552,7 +524,7 @@ $(document).ready(function() {
         freeMove:false,
         pager:false, 
         onSliderLoad: function() {
-                $('#slider-fifth').removeClass('cS-hidden');
+                $('#works-sl').removeClass('cS-hidden');
         },
         responsive : [
         {
@@ -569,9 +541,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="js/fullpage.js"></script>
 
 <script>  
-    
 
-    
 if($(window).width() > 1199){
     var mas = ['main', 'works', 'design', 'vac', 'contacts'];
     function arrChng(){

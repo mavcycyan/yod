@@ -1,0 +1,39 @@
+/*page_case*/
+.page_usl {padding-bottom: 60px;
+    &-cont {margin-top: 112px;}
+    &-ttl { font-size: 64px; line-height: 1; } 
+    &-img {margin-top: 120px;}
+    &-form {
+        &-ttl { font-size: 30px; text-align: center; } 
+        &-txt { font-size: 20px; text-align: center; line-height: 32px; opacity: 0.5; }  
+        &-row { margin-top: 32px; background: #FFFFFF; box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1); border-radius: 12px; padding: 24px; 
+            input[type="text"] { background: #F6F6F6; border-radius: 4px; border: 0; padding: 12px 15px; width: 100%; font-size: 14px; 
+                &.name {background: url(../img/form-name.png)no-repeat 90% 50%, #F6F6F6;}
+                &.phn {background: url(../img/form-phn.png)no-repeat 90% 50%, #F6F6F6;}
+                &.ml {background: url(../img/form-ml.png)no-repeat 90% 50%, #F6F6F6;}
+            }
+            button {display: block; color: #000; text-align: center; width: 100%; border: 0; cursor: pointer; border-radius: 4px; padding: 11px 10px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; opacity: 1; @include trans(0.3s);
+                &:before { content: ''; width: calc(100% - 2px); height: calc(100% - 2px); top: 1px; left: 1px; background: #fff; display: block; position: absolute; border-radius: 4px;z-index: 1; }
+                span {position: relative; z-index: 2;}
+                &:hover, &:focus {color: #000;text-decoration: none;opacity: 0.5; @include trans(0.3s);}
+                &:after { content: ''; width: 8px; height: 8px; background: linear-gradient(65.75deg, #69FFAE -14.45%, #69C9FF 51.99%, #9069FF 115.6%); display: block; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); border-radius: 50%; z-index: 3;}
+            }
+        } 
+    }
+}
+/*page_case*/
+
+@media(max-width: 991px){
+    .page_usl{
+        &-ttl { font-size: 40px; } 
+        &-form {
+            &-row input[type="text"] { border: 1px solid #E3E3E3; background-color: #fff; margin-bottom: 8px;
+                &.name {background: url(../img/form-name.png)no-repeat 90% 50%, #fff;}
+                &.phn {background: url(../img/form-phn.png)no-repeat 90% 50%, #fff;}
+                &.ml {background: url(../img/form-ml.png)no-repeat 90% 50%, #fff;}
+             } 
+            &-ttl { text-align: left; } 
+            &-txt { text-align: left; font-size: 14px; } .page_case-form-row { margin: 0 auto; max-width: 95%; }
+        }
+    }
+}

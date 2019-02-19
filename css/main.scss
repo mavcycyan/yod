@@ -122,6 +122,7 @@ body:not(.body-main) {
 @import "_index";
 @import "_fonts";
 @import "_case";
+@import "_usl";
  
 .screen-btm { padding: 58px 43px; position: absolute; width: 100%; bottom: 0; left: 0; z-index: 2; 
     &-down { padding-left: 20px; opacity: 0.3; background: url('../img/arr-dwn.svg')no-repeat 0% 50%; background-size: 12px 6px; display: block;  color: #fff;
