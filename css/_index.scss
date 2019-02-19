@@ -1,3 +1,4 @@
+.body-main {background: #0B0B0B;color:#fff;}
 /*main*/
 .main {/*padding-top: 320px; padding-top: 16.7vw;*/ /*padding-bottom: 140px;*/min-height: 100vh; background: url('../img/main-back.png')no-repeat 0% 50%; position: relative; overflow: hidden;
     &-overl {position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;background: #000; opacity: 0.5;}
@@ -300,7 +301,7 @@
         }    
     }
     &-soc { text-align: center;margin-bottom: 135px;
-        a { display: inline-block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; opacity: 0.3; 
+        a { display: inline-block; display: block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; opacity: 0.3; 
             &.one {background: url('../img/works-soc1.svg')no-repeat;background-size: contain;margin-bottom: 20px;}
             &.two {background: url('../img/works-soc2.svg')no-repeat;background-size: contain;margin-bottom: 20px;} 
             &.three {background: url('../img/cont-soc3.svg')no-repeat;background-size: contain;margin-bottom: 20px;}

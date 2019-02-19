@@ -23,7 +23,7 @@
 	-ms-border-radius:$border-radius;
 }
 
-body {font-family: 'BrutalType', sans-serif; font-size: 16px;font-weight: 400;background: #0B0B0B;color:#fff; min-height: 100vh;}
+body {font-family: 'BrutalType', sans-serif; font-size: 16px;font-weight: 400;background: #fff;color:#000; min-height: 100vh;}
 
 img { max-width: 100%; height:auto; }
 
@@ -44,7 +44,9 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
             li { display: inline-block; margin: 0 28px; vertical-align: top; 
                 &:first-child { margin-left: 0; } 
                 &:last-child { margin-right: 0; } 
-                a { color: #fff; opacity: 0.3; font-size: 20px;    font-size: 1vw; } 
+                a { color: #fff; opacity: 0.3; font-size: 20px; font-size: 1vw; 
+                    &:hover, &:focus {opacity: 1; text-decoration: none;}
+                } 
             }  
         }      
     } 
@@ -62,7 +64,26 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
     }
     &-mob {display: none;}
 }
-
+body:not(.body-main) {
+    header {position: static;}
+    .h {
+        &-logo {color: #000;}
+        &-menu {
+            ul {
+                li {
+                    a {color: #000;}
+                }
+            }
+        }
+        &-order { color: #000;
+            &:before { background: #fff; }
+        }
+        &-auth { background: url(../img/h-auth-black.svg) no-repeat 50% 50%; } 
+        &-btn {
+            span { background: #000; }
+        } 
+    }
+}
 /*header*/
 @media(max-width: 1600px) and (min-width: 1200px){
    
@@ -86,10 +107,20 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
             &-cat { font-size: 20px; margin-top: 66px; }
         }    
     }
+    body:not(.body-main) {
+        .h-mob {
+            &-logo {color: #000;}
+            &-btn {
+                span {background: #000;}
+            }
+            &-auth { background: url(../img/h-auth-black.svg) no-repeat 50% 50%; }
+        }
+    }
 }
 
 @import "_index";
 @import "_fonts";
+@import "_case";
  
 .screen-btm { padding: 58px 43px; position: absolute; width: 100%; bottom: 0; left: 0; z-index: 2; 
     &-down { padding-left: 20px; opacity: 0.3; background: url('../img/arr-dwn.svg')no-repeat 0% 50%; background-size: 12px 6px; display: block;  color: #fff;
@@ -164,7 +195,9 @@ footer { padding: 3vw 2.3vw; }
         }
     }       
 }
-
+body:not(.body-main) {
+    footer {background: #000;}
+}
 /*footer*/
 @media(max-width: 991px) and (min-width: 768px){
     
