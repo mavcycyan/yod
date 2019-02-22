@@ -392,6 +392,13 @@ body:not(.body-main) .h-btn span { background: #000; }
 .page_usl-cont { margin-top: 112px; }
 .page_usl-ttl { font-size: 64px; line-height: 1; }
 .page_usl-img { margin-top: 120px; }
+.page_usl-sub { font-size: 30px; line-height: 40px; margin-top: 108px; }
+.page_usl-sub span { color: #69C9FF; }
+.page_usl-txt-gray { line-height: 32px; font-size: 20px; color: #979797; margin-top: 48px; }
+.page_usl-txt { line-height: 32px; font-size: 20px; color: #000; margin-top: 32px; }
+.page_usl-bl { width: 213px; height: 122px; text-align: center; background: url(../img/wreath2.svg) no-repeat; background-size: contain; padding-top: 20px; display: inline-block; margin-right: 20px; }
+.page_usl-bl-num { font-size: 30px; }
+.page_usl-bl-txt { color: #00000080; }
 .page_usl-form-ttl { font-size: 30px; text-align: center; }
 .page_usl-form-txt { font-size: 20px; text-align: center; line-height: 32px; opacity: 0.5; }
 .page_usl-form-row { margin-top: 32px; background: #FFFFFF; box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1); border-radius: 12px; padding: 24px; }

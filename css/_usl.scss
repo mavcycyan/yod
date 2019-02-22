@@ -3,6 +3,16 @@
     &-cont {margin-top: 112px;}
     &-ttl { font-size: 64px; line-height: 1; } 
     &-img {margin-top: 120px;}
+    &-sub { font-size: 30px; line-height: 40px; margin-top: 108px; 
+        span { color: #69C9FF; }
+    }
+    &-txt-gray { line-height: 32px; font-size: 20px; color: #979797; margin-top: 48px; } 
+    &-txt { line-height: 32px; font-size: 20px; color: #000; margin-top: 32px; }
+    &-bl { width: 213px; height: 122px; text-align: center; background: url(../img/wreath2.svg) no-repeat; background-size: contain; padding-top: 20px; display: inline-block; margin-right: 20px; 
+        &-num { font-size: 30px; } 
+        &-txt { color: #00000080; }
+    }
+    
     &-form {
         &-ttl { font-size: 30px; text-align: center; } 
         &-txt { font-size: 20px; text-align: center; line-height: 32px; opacity: 0.5; }  
