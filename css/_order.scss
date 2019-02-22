@@ -1,0 +1,86 @@
+/*page_order*/
+.page_order {margin-top: 112px;
+    &-top { font-size: 20px; 
+        &-gray { opacity: 0.3; display: inline-block; margin-right: 30px; }
+        &-step { display: inline-block; }
+    } 
+    &-wp { margin-top: 39px; }
+    &-bl { display: inline-block;  
+        label { padding: 23px 50px; border-radius: 32px; font-size: 20px; box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1); margin-right: 20px; margin-bottom: 24px; cursor: pointer; line-height: 1;} 
+        input[type="checkbox"] { display: none; 
+            &:checked + label {background: url('../img/chk-v.png')no-repeat 15px 50%, #F7F7F7;}
+        }
+    } 
+    &-ttl {font-size: 40px;margin-top: 39px;}
+    &-txt {font-size: 20px;margin-top: 22px;opacity: 0.5;}
+    &-btn { display:block; max-width: 237px;border: 1px solid #9797974d; box-sizing: border-box; border-radius: 32px; background: none; font-size: 20px; padding: 21px 68px;padding-left: 108px; line-height: 1; margin-top: 72px; opacity: 1; position: relative; cursor: pointer; @include trans(0.3s);
+        &:hover, &:focus {opacity: 0.3; box-shadow: none; outline: 0; @include trans(0.3s);}
+        &:before {content: '';background: url('../img/arr-nxt.png')no-repeat 50% 50%;width: 64px;height: 64px;border-radius: 50%;position: absolute;top: 0;left: 0;display: block; border: 1px solid #9797974d;}
+    }
+    &-mob-btn{display: none;}
+    &-line {height: 15vw;width: 100%;margin-top: 58px;margin-bottom: 124px; position: relative;
+        svg {position: relative;z-index: 1;}
+        span {width: 36px; height: 36px; display: block; border-radius: 50%; background: #fff; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); position: absolute;z-index: 2;
+            &:before { content: ''; display: block; border: 1px solid #e6e6e6; width: 14px; height: 14px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+            &.circ1 { bottom: -3%; left: 23vw; } 
+            &.circ2 { bottom: 24%; left: 40vw; } 
+            &.circ3 { bottom: -3%; left: 58vw; } 
+            &.circ4 { bottom: 40%; left: 75.5vw; }        
+        }
+    }
+    &-it { max-width: 410px; margin-bottom: 41px; 
+        input[type="text"] { border: 0; border-bottom: 1px solid #00000033; width: 100%; font-size: 20px; padding: 7px 0; 
+            &:hover, &:focus {box-shadow: none; outline:0;}
+            &[name="name"] {background: url(../img/form-name.png) no-repeat 100% 50%, #fff;}
+            &[name="phone"] {background: url(../img/form-phn.png) no-repeat 100% 50%, #fff;}
+            &[name="mail"] {background: url(../img/form-ml.png) no-repeat 100% 50%, #fff;}            
+        }
+    }
+    &-rass { margin-top: 72px; 
+        &-txt { font-size: 20px; margin-bottom: 7px; }
+        &-chb {
+            label { font-size: 20px; color: #00000080; position: relative; padding-left: 40px; cursor: pointer;
+                span { content: ''; border: 1px solid #000000; border-radius: 4px; width: 24px; height: 24px; display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 0; }
+            }
+            input[type="checkbox"] { display: none; 
+                &:checked{
+                    & + label {
+                        span {
+                            &:before { content: ''; width: 10px; height: 10px; display: block; position: absolute; background: #000; border-radius: 2px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+                        }
+                    }
+                }
+            } 
+        } 
+    }
+    
+}
+/*page_order*/
+
+@media(max-width: 991px){
+    .page_order{margin-top: 62px;
+        &-bl {  
+            label { padding: 21px 30px; margin-right: 0; margin: 0 7px 10px; font-size: 14px; }
+            input[type="checkbox"]:checked + label {background: url("../img/chk-v.png") no-repeat 8px 50%, #F7F7F7;}
+        } 
+        &-wp { text-align: center; }    
+        &-top { font-size: 14px; text-align: center; } 
+        &-ttl { font-size: 30px; text-align: center; } 
+        &-txt { font-size: 14px; text-align: center; }
+        &-btn {display: none;}
+        &-mob-btn { display:block; max-width: 237px;border: 1px solid #9797974d; box-sizing: border-box; border-radius: 32px; background: none; font-size: 20px; padding: 21px 50px; padding-left: 89px; line-height: 1; margin: 30px auto; opacity: 1; position: relative; cursor: pointer; @include trans(0.3s);
+            &:hover, &:focus {opacity: 0.3; box-shadow: none; outline: 0; @include trans(0.3s);}
+            &:before {content: '';background: url('../img/arr-nxt.png')no-repeat 50% 50%;width: 64px;height: 64px;border-radius: 50%;position: absolute;top: 0;left: 0;display: block; border: 1px solid #9797974d;}
+        }
+        &-line {display: none;}
+        &-it input[type="text"] { text-align: center; font-size: 14px; 
+            &[name="name"] {text-align: left;}
+            &[name="phone"] {text-align: left;}
+            &[name="mail"] {text-align: left;}
+        } 
+        &-rass { margin-top: 40px; 
+            &-txt { font-size: 14px; } 
+            &-chb label { font-size: 14px; margin-top: 10px; }        
+        } 
+    }
+}
