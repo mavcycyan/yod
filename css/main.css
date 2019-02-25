@@ -488,7 +488,7 @@ body:not(.body-main) .h-btn span { background: #000; }
 @media (max-width: 991px) { .page_vac-ttl { font-size: 40px; text-align: center; }
   .page_vac-menu { display: none; }
   .page_vac-vacs { margin-top: 51px; }
-  .page_vac-bl-mob-num { line-height: 32px; font-size: 20px; text-align: center; }
+  .page_vac-bl-mob-num { line-height: 32px; font-size: 20px; text-align: center; display: block; }
   .page_vac-bl-num { display: none; }
   .page_vac-bl-top { text-align: center; font-size: 12px; }
   .page_vac-bl-ttl { line-height: 32px; font-size: 20px; text-align: center; color: #000000; }
