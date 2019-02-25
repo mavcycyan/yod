@@ -59,7 +59,7 @@
 @media(min-width: 992px){
     .page_about {
         &-memb {  
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;
                     & + li { opacity: 1;
                         & + li { opacity: 1;
@@ -72,14 +72,14 @@
             }
         }
         &-partn {
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;
                     & + li { opacity: 1;}
                 }
             }
         }
         &-sert {
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;
                     & + li { opacity: 1;
                         & + li { opacity: 1;}
@@ -88,7 +88,7 @@
             }
         }
         &-letrs {
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;
                     & + li { opacity: 1;
                         & + li { opacity: 1;}
@@ -114,20 +114,20 @@
         &-subttl { line-height: 32px; font-size: 20px; margin-top: 67px; text-align: center; } 
         &-memb {  margin: 0 auto; margin-top: 59px; max-width: 200px;
             &-bl {margin: 0 auto;}
-            li.lslide.active { opacity: 1;}
+            li.active { opacity: 1;}
         }
         &-partn {margin-top: 28px;
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;}
             }
         }
         &-sert {margin-top: 28px;
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;}
             }
         }  
         &-letrs {margin-top: 28px;
-            li.lslide.active { opacity: 1;
+            li.active { opacity: 1;
                 & + li { opacity: 1;}
             }
         }  

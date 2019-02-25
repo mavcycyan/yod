@@ -543,23 +543,23 @@ body:not(.body-main) .h-btn span { background: #000; }
 .page_about-letrs-img img { display: inline-block; vertical-align: middle; }
 
 /*page_about*/
-@media (min-width: 992px) { .page_about-memb li.lslide.active { opacity: 1; }
-  .page_about-memb li.lslide.active + li { opacity: 1; }
-  .page_about-memb li.lslide.active + li + li { opacity: 1; }
-  .page_about-memb li.lslide.active + li + li + li { opacity: 1; }
-  .page_about-memb li.lslide.active + li + li + li + li { opacity: 1; }
-  .page_about-memb li.lslide.active + li + li + li + li + li { opacity: 1; }
-  .page_about-partn li.lslide.active { opacity: 1; }
-  .page_about-partn li.lslide.active + li { opacity: 1; }
-  .page_about-partn li.lslide.active + li + li { opacity: 1; }
-  .page_about-sert li.lslide.active { opacity: 1; }
-  .page_about-sert li.lslide.active + li { opacity: 1; }
-  .page_about-sert li.lslide.active + li + li { opacity: 1; }
-  .page_about-sert li.lslide.active + li + li + li { opacity: 1; }
-  .page_about-letrs li.lslide.active { opacity: 1; }
-  .page_about-letrs li.lslide.active + li { opacity: 1; }
-  .page_about-letrs li.lslide.active + li + li { opacity: 1; }
-  .page_about-letrs li.lslide.active + li + li + li { opacity: 1; } }
+@media (min-width: 992px) { .page_about-memb li.active { opacity: 1; }
+  .page_about-memb li.active + li { opacity: 1; }
+  .page_about-memb li.active + li + li { opacity: 1; }
+  .page_about-memb li.active + li + li + li { opacity: 1; }
+  .page_about-memb li.active + li + li + li + li { opacity: 1; }
+  .page_about-memb li.active + li + li + li + li + li { opacity: 1; }
+  .page_about-partn li.active { opacity: 1; }
+  .page_about-partn li.active + li { opacity: 1; }
+  .page_about-partn li.active + li + li { opacity: 1; }
+  .page_about-sert li.active { opacity: 1; }
+  .page_about-sert li.active + li { opacity: 1; }
+  .page_about-sert li.active + li + li { opacity: 1; }
+  .page_about-sert li.active + li + li + li { opacity: 1; }
+  .page_about-letrs li.active { opacity: 1; }
+  .page_about-letrs li.active + li { opacity: 1; }
+  .page_about-letrs li.active + li + li { opacity: 1; }
+  .page_about-letrs li.active + li + li + li { opacity: 1; } }
 @media (max-width: 991px) { .page_about-ttl { font-size: 40px; text-align: center; }
   .page_about-txt { line-height: 24px; font-size: 14px; text-align: center; }
   .page_about-present { font-size: 20px; margin: 52px auto 0; display: block; max-width: 370px; }
@@ -572,16 +572,16 @@ body:not(.body-main) .h-btn span { background: #000; }
   .page_about-subttl { line-height: 32px; font-size: 20px; margin-top: 67px; text-align: center; }
   .page_about-memb { margin: 0 auto; margin-top: 59px; max-width: 200px; }
   .page_about-memb-bl { margin: 0 auto; }
-  .page_about-memb li.lslide.active { opacity: 1; }
+  .page_about-memb li.active { opacity: 1; }
   .page_about-partn { margin-top: 28px; }
-  .page_about-partn li.lslide.active { opacity: 1; }
-  .page_about-partn li.lslide.active + li { opacity: 1; }
+  .page_about-partn li.active { opacity: 1; }
+  .page_about-partn li.active + li { opacity: 1; }
   .page_about-sert { margin-top: 28px; }
-  .page_about-sert li.lslide.active { opacity: 1; }
-  .page_about-sert li.lslide.active + li { opacity: 1; }
+  .page_about-sert li.active { opacity: 1; }
+  .page_about-sert li.active + li { opacity: 1; }
   .page_about-letrs { margin-top: 28px; }
-  .page_about-letrs li.lslide.active { opacity: 1; }
-  .page_about-letrs li.lslide.active + li { opacity: 1; } }
+  .page_about-letrs li.active { opacity: 1; }
+  .page_about-letrs li.active + li { opacity: 1; } }
 .screen-btm { padding: 58px 43px; position: absolute; width: 100%; bottom: 0; left: 0; z-index: 2; }
 .screen-btm-down { padding-left: 20px; opacity: 0.3; background: url("../img/arr-dwn.svg") no-repeat 0% 50%; background-size: 12px 6px; display: block; color: #fff; }
 .screen-btm-down:hover, .screen-btm-down:focus { color: #fff; text-decoration: none; }
