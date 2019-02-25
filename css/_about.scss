@@ -1,0 +1,135 @@
+/*page_about*/
+.page_about {padding-bottom: 60px;overflow-x: hidden;
+    &-cont {margin-top: 112px;}
+    &-ttl { font-size: 64px; line-height: 1; }
+    &-txt { line-height: 48px; font-size: 30px; color: #979797; margin-top: 84px; }
+    &-present {display: inline-block; color: #000; font-size: 30px; width: 100%; max-width: 450px;
+        span { display: inline-block; width: 64px; height: 64px; vertical-align: middle; border-radius: 50%; margin-right: 28px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; 
+            &:before { content: ''; width: calc(100% - 2px); height: calc(100% - 2px); top: 1px; left: 1px; background: url("../img/about-pres.png") no-repeat 50% 50%, #fff; display: block; position: absolute; border-radius: 50%; z-index: 1; }
+        }
+        &:hover, &:focus { text-decoration: none; color: #000; 
+            span { animation: rotate 1s ease-in-out; }
+        }
+    }
+    &-vac {text-align: right;font-size: 30px;color: #979797;margin-top: 75px;display: block;}
+    &-img {
+        img {margin-top: 93px;}
+    }
+    &-bl {margin-top: 117px;
+        &-top {font-size: 14px; color: #000000; opacity: 0.3;}
+        &-ttl {font-size: 40px; margin-top: 17px;}
+        &-txt {line-height: 32px; font-size: 20px; color: #979797;margin-top: 70px;}
+    }
+    &-memb { margin-top: 64px;
+        .lSSlideOuter { overflow: visible; } 
+        .lSSlideWrapper { overflow: visible!important; }
+        &-bl {max-width: 112px;text-align: center;display: block;}
+        &-img { display: block; border-radius: 50%; } 
+        &-ttl { display: block; font-size: 14px; color: #979797; margin-top: 21px; } 
+        &-txt { margin-top: 6px; font-size: 14px; }   
+        li {opacity: 0.3;}
+    }
+    &-subttl {font-size: 40px; margin-top: 17px;margin-top: 104px;}
+    &-partn {margin-top: 104px;
+        .lSSlideOuter { overflow: visible; } 
+        .lSSlideWrapper { overflow: visible!important; }
+        li {opacity: 0.3;}
+        &-img { display: block; min-height: 95px;
+            img {display:inline-block; vertical-align:middle;}
+        }
+    }
+    &-sert {margin-top: 104px;
+        .lSSlideOuter { overflow: visible; } 
+        .lSSlideWrapper { overflow: visible!important; }
+        li {opacity: 0.3;}
+        &-img { display: block;min-height: 95px;
+            img {display:inline-block; vertical-align:middle;}
+        }
+    }
+    &-letrs {margin-top: 104px;
+        .lSSlideOuter { overflow: visible; } 
+        .lSSlideWrapper { overflow: visible!important; }
+        li {opacity: 0.3;}
+        &-img { display: block; min-height: 95px;
+            img {display:inline-block; vertical-align:middle;}
+        }
+    }
+}
+/*page_about*/
+@media(min-width: 992px){
+    .page_about {
+        &-memb {  
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;
+                    & + li { opacity: 1;
+                        & + li { opacity: 1;
+                            & + li { opacity: 1;
+                                & + li { opacity: 1;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-partn {
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;
+                    & + li { opacity: 1;}
+                }
+            }
+        }
+        &-sert {
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;
+                    & + li { opacity: 1;
+                        & + li { opacity: 1;}
+                    }
+                }
+            }
+        }
+        &-letrs {
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;
+                    & + li { opacity: 1;
+                        & + li { opacity: 1;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .page_about{
+        &-ttl { font-size: 40px; text-align: center; } 
+        &-txt { line-height: 24px; font-size: 14px; text-align: center; }
+        &-present { font-size: 20px; margin: 52px auto 0; display: block; max-width: 370px; } 
+        &-vac { font-size: 20px; text-align: center; margin-top: 32px; } 
+        &-img { display: none; } 
+        &-bl { margin-top: 62px; 
+            &-top { text-align: center; font-size: 12px; } 
+            &-ttl { font-size: 20px; margin-top: 11px; text-align: center; }
+            &-txt { font-size: 14px; text-align: center; margin-top: 20px; line-height: 24px; }           
+        }
+        &-subttl { line-height: 32px; font-size: 20px; margin-top: 67px; text-align: center; } 
+        &-memb {  margin: 0 auto; margin-top: 59px; max-width: 200px;
+            &-bl {margin: 0 auto;}
+            li.lslide.active { opacity: 1;}
+        }
+        &-partn {margin-top: 28px;
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;}
+            }
+        }
+        &-sert {margin-top: 28px;
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;}
+            }
+        }  
+        &-letrs {margin-top: 28px;
+            li.lslide.active { opacity: 1;
+                & + li { opacity: 1;}
+            }
+        }  
+    }
+}

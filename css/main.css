@@ -498,6 +498,90 @@ body:not(.body-main) .h-btn span { background: #000; }
   .page_vac-bl-list ul { padding: 0; }
   .page_vac-bl-list ul li { text-align: center; padding: 0; }
   .page_vac-bl-list ul li:before { display: none; } }
+/*page_about*/
+.page_about { padding-bottom: 60px; overflow-x: hidden; }
+.page_about-cont { margin-top: 112px; }
+.page_about-ttl { font-size: 64px; line-height: 1; }
+.page_about-txt { line-height: 48px; font-size: 30px; color: #979797; margin-top: 84px; }
+.page_about-present { display: inline-block; color: #000; font-size: 30px; width: 100%; max-width: 450px; }
+.page_about-present span { display: inline-block; width: 64px; height: 64px; vertical-align: middle; border-radius: 50%; margin-right: 28px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; }
+.page_about-present span:before { content: ''; width: calc(100% - 2px); height: calc(100% - 2px); top: 1px; left: 1px; background: url("../img/about-pres.png") no-repeat 50% 50%, #fff; display: block; position: absolute; border-radius: 50%; z-index: 1; }
+.page_about-present:hover, .page_about-present:focus { text-decoration: none; color: #000; }
+.page_about-present:hover span, .page_about-present:focus span { animation: rotate 1s ease-in-out; }
+.page_about-vac { text-align: right; font-size: 30px; color: #979797; margin-top: 75px; display: block; }
+.page_about-img img { margin-top: 93px; }
+.page_about-bl { margin-top: 117px; }
+.page_about-bl-top { font-size: 14px; color: #000000; opacity: 0.3; }
+.page_about-bl-ttl { font-size: 40px; margin-top: 17px; }
+.page_about-bl-txt { line-height: 32px; font-size: 20px; color: #979797; margin-top: 70px; }
+.page_about-memb { margin-top: 64px; }
+.page_about-memb .lSSlideOuter { overflow: visible; }
+.page_about-memb .lSSlideWrapper { overflow: visible !important; }
+.page_about-memb-bl { max-width: 112px; text-align: center; display: block; }
+.page_about-memb-img { display: block; border-radius: 50%; }
+.page_about-memb-ttl { display: block; font-size: 14px; color: #979797; margin-top: 21px; }
+.page_about-memb-txt { margin-top: 6px; font-size: 14px; }
+.page_about-memb li { opacity: 0.3; }
+.page_about-subttl { font-size: 40px; margin-top: 17px; margin-top: 104px; }
+.page_about-partn { margin-top: 104px; }
+.page_about-partn .lSSlideOuter { overflow: visible; }
+.page_about-partn .lSSlideWrapper { overflow: visible !important; }
+.page_about-partn li { opacity: 0.3; }
+.page_about-partn-img { display: block; min-height: 95px; }
+.page_about-partn-img img { display: inline-block; vertical-align: middle; }
+.page_about-sert { margin-top: 104px; }
+.page_about-sert .lSSlideOuter { overflow: visible; }
+.page_about-sert .lSSlideWrapper { overflow: visible !important; }
+.page_about-sert li { opacity: 0.3; }
+.page_about-sert-img { display: block; min-height: 95px; }
+.page_about-sert-img img { display: inline-block; vertical-align: middle; }
+.page_about-letrs { margin-top: 104px; }
+.page_about-letrs .lSSlideOuter { overflow: visible; }
+.page_about-letrs .lSSlideWrapper { overflow: visible !important; }
+.page_about-letrs li { opacity: 0.3; }
+.page_about-letrs-img { display: block; min-height: 95px; }
+.page_about-letrs-img img { display: inline-block; vertical-align: middle; }
+
+/*page_about*/
+@media (min-width: 992px) { .page_about-memb li.lslide.active { opacity: 1; }
+  .page_about-memb li.lslide.active + li { opacity: 1; }
+  .page_about-memb li.lslide.active + li + li { opacity: 1; }
+  .page_about-memb li.lslide.active + li + li + li { opacity: 1; }
+  .page_about-memb li.lslide.active + li + li + li + li { opacity: 1; }
+  .page_about-memb li.lslide.active + li + li + li + li + li { opacity: 1; }
+  .page_about-partn li.lslide.active { opacity: 1; }
+  .page_about-partn li.lslide.active + li { opacity: 1; }
+  .page_about-partn li.lslide.active + li + li { opacity: 1; }
+  .page_about-sert li.lslide.active { opacity: 1; }
+  .page_about-sert li.lslide.active + li { opacity: 1; }
+  .page_about-sert li.lslide.active + li + li { opacity: 1; }
+  .page_about-sert li.lslide.active + li + li + li { opacity: 1; }
+  .page_about-letrs li.lslide.active { opacity: 1; }
+  .page_about-letrs li.lslide.active + li { opacity: 1; }
+  .page_about-letrs li.lslide.active + li + li { opacity: 1; }
+  .page_about-letrs li.lslide.active + li + li + li { opacity: 1; } }
+@media (max-width: 991px) { .page_about-ttl { font-size: 40px; text-align: center; }
+  .page_about-txt { line-height: 24px; font-size: 14px; text-align: center; }
+  .page_about-present { font-size: 20px; margin: 52px auto 0; display: block; max-width: 370px; }
+  .page_about-vac { font-size: 20px; text-align: center; margin-top: 32px; }
+  .page_about-img { display: none; }
+  .page_about-bl { margin-top: 62px; }
+  .page_about-bl-top { text-align: center; font-size: 12px; }
+  .page_about-bl-ttl { font-size: 20px; margin-top: 11px; text-align: center; }
+  .page_about-bl-txt { font-size: 14px; text-align: center; margin-top: 20px; line-height: 24px; }
+  .page_about-subttl { line-height: 32px; font-size: 20px; margin-top: 67px; text-align: center; }
+  .page_about-memb { margin: 0 auto; margin-top: 59px; max-width: 200px; }
+  .page_about-memb-bl { margin: 0 auto; }
+  .page_about-memb li.lslide.active { opacity: 1; }
+  .page_about-partn { margin-top: 28px; }
+  .page_about-partn li.lslide.active { opacity: 1; }
+  .page_about-partn li.lslide.active + li { opacity: 1; }
+  .page_about-sert { margin-top: 28px; }
+  .page_about-sert li.lslide.active { opacity: 1; }
+  .page_about-sert li.lslide.active + li { opacity: 1; }
+  .page_about-letrs { margin-top: 28px; }
+  .page_about-letrs li.lslide.active { opacity: 1; }
+  .page_about-letrs li.lslide.active + li { opacity: 1; } }
 .screen-btm { padding: 58px 43px; position: absolute; width: 100%; bottom: 0; left: 0; z-index: 2; }
 .screen-btm-down { padding-left: 20px; opacity: 0.3; background: url("../img/arr-dwn.svg") no-repeat 0% 50%; background-size: 12px 6px; display: block; color: #fff; }
 .screen-btm-down:hover, .screen-btm-down:focus { color: #fff; text-decoration: none; }
