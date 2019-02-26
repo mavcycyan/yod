@@ -16,6 +16,14 @@ jQuery(document).ready(function($){
         padding: [0, 0, 0, 0],
         autoScale: true
     });
+    $(".mn").fancybox({ 
+        href: '#modal_mn', 
+        wrapCSS: 'modal_auth_wp',
+        minWidth: '100%',
+        margin: [0, 0, 0, 0],
+        padding: [0, 0, 0, 0],
+        autoScale: true
+    });
 });
 /**/
 

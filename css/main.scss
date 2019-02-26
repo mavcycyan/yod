@@ -64,7 +64,7 @@ header {padding: 58px 43px; padding: 3vw 2.3vw; position: fixed; width: 100%; to
     }
     &-mob {display: none;}
 }
-body:not(.body-main) {
+body:not(.body-black) {
     header {position: static;}
     .h {
         &-logo {color: #000;}
@@ -83,6 +83,9 @@ body:not(.body-main) {
             span { background: #000; }
         } 
     }
+}
+body.body-pers{
+    header {position: absolute;}
 }
 /*header*/
 @media(max-width: 1600px) and (min-width: 1200px){
@@ -127,6 +130,7 @@ body:not(.body-main) {
 @import "_vac";
 @import "_about";
 @import "_partn";
+@import "_pers"; 
  
 .screen-btm { padding: 58px 43px; position: absolute; width: 100%; bottom: 0; left: 0; z-index: 2; 
     &-down { padding-left: 20px; opacity: 0.3; background: url('../img/arr-dwn.svg')no-repeat 0% 50%; background-size: 12px 6px; display: block;  color: #fff;

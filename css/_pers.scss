@@ -1,0 +1,47 @@
+/*page_pers*/
+.page_pers {padding-bottom: 60px; overflow-x: hidden;
+    &-top {background: #000; padding-top: 126px; color: #fff;padding-bottom: 75px; position: relative;
+        &:before {content: ''; height: 0; border-left: 18px solid transparent; border-right: 18px solid transparent; border-top: 18px solid #000; position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%);}
+        &-ttl {margin-top: 98px;font-size: 30px;}
+        &-ord {margin-top: 106px;
+            &-line {background: #c4c4c41a;border-radius: 8px;max-width: 413px;height: 16px; width: 100%;float: right; position: relative;
+                &-fill {background: linear-gradient(21.98deg, #69FFAE -14.45%, #69C9FF 51.99%, #9069FF 115.6%);border-radius: 8px;height: 100%;min-width: 18px;padding: 5px 6px; display: inline-block;
+                    &-end {background: #fff; width: 6px;height: 6px;border-radius: 50%;float:right;position: relative;}
+                }
+                &-bl { position: absolute; top: -48px; left: -42px; min-width: 180px; }
+                &-cnt { border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 12px; display: inline-block; font-size: 14px; padding: 4px 16px; line-height: 1; position: relative; width: 92px; text-align: center;
+                    &:before { content: ''; content: ''; height: 0; border-left: 13px solid transparent; border-right: 13px solid transparent; border-top: 13px solid #ffffff4d; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); } 
+                    &:after { content: ''; height: 0; border-left: 11px solid transparent; border-right: 11px solid transparent; border-top: 12px solid #000; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); }                  
+                } 
+                &-skid { display: inline-block; font-size: 14px; margin-left: 10px; }               
+            }
+            &-min { font-size: 14px; color: #FFFFFF; opacity: 0.5; position: absolute; left: 0; } 
+            &-max { font-size: 14px; color: #FFFFFF; opacity: 0.5; position: absolute; right: 0; }
+            &-txt { font-size: 14px; color: #FFFFFF; opacity: 0.5; position: absolute; left: 0; right: 0; margin: 0 auto; text-align: center; }
+        }
+        &-ooo {margin-top: 127px;font-size: 16px;}
+        &-btns {margin-top: 115px; text-align: right;}
+        &-btn { display: inline-block; max-width: 221px; border: 1px solid #fff; box-sizing: border-box; color: #fff; border-radius: 32px; background: none; font-size: 16px; padding: 11px 27px; width: 100%; padding-left: 75px; line-height: 1; opacity: 1; position: relative; cursor: pointer; @include trans(0.3s);
+            &:hover, &:focus {opacity: 0.3; box-shadow: none; outline: 0; @include trans(0.3s);}
+            &:before {content: ''; background: url(../img/arr-nxt2.png) no-repeat 50% 50%; width: 40px; height: 40px; border-radius: 50%; position: absolute; top: -1px; left: -1px;display: block; border: 1px solid #fff;}
+        }    
+        &-btn2 { background: #c4c4c41a; border-radius: 20px; margin-left: 18px; border: 0; color: #fff; padding: 10px 46px; display: inline-block;cursor: pointer; opacity: 1; @include trans(0.3s);
+            &:hover, &:focus {opacity: 0.3; box-shadow: none; outline: 0; @include trans(0.3s);}
+        }   
+        &-sep {opacity: 0.1;border: 1px solid #fff;margin-top: 48px;}
+        &-adr {line-height: 24px; font-size: 14px;opacity: 0.5;margin-top: 29px;}
+        &-info { text-align: center; margin-top: 29px; text-align: right;
+            a { color: #ffffff80; 
+                &:hover { text-decoration: none; color: #fff; }
+            } 
+            span { display: inline-block; width: 3px; height: 3px; background: #fff; opacity: 0.2; padding: 0; margin: 0 10px; margin-bottom: 3px; }
+        }        
+    }
+}
+/*page_pers*/
+
+@media(max-width: 991px){
+    .page_pers{
+
+    }
+}

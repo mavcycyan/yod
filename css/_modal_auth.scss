@@ -27,6 +27,15 @@
         }
         &-txt { font-size: 16px; opacity: 0.5; color: #fff; }
     }
+    &-menu {
+        ul { margin: 0; padding: 0; list-style: none; 
+            li {
+                a { font-size: 30px; color: #fff; opacity: 0.5; margin-bottom: 20px; display: block;
+                    &:hover, &:focus { opacity: 1;text-decoration: none;}
+                }
+            }
+        }
+    } 
 }
 /*modal_auth*/
 
@@ -42,6 +51,12 @@
                 .fancybox-close { top: 85px;}        
         }   
         &-ttl { text-align: center; font-size: 20px; margin-bottom: 50px; } 
-        
+        &-menu {
+            ul {  
+                li {
+                    a { text-align: center; }
+                }
+            }
+        }
     }
 }
