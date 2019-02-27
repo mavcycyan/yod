@@ -40,7 +40,7 @@
                <div class="col-12 col-md-6 col-lg-4">
                    <a href="#" class="h-logo">YOD</a>
                </div>
-               <div class="col-12 col-md-6 col-lg-4 col-lg-3">
+               <div class="col-12 col-md-6 col-lg-4">
                    <div class="h-menu">
                        <ul>
                            <li><a href="#">Работы <sup>25</sup></a></li>
@@ -49,7 +49,7 @@
                        </ul>
                    </div>
                </div>
-               <div class="col-12 col-md-6 col-lg-4 col-lg-3">
+               <div class="col-12 col-md-6 col-lg-4">
                    <button class="h-auth ath"></button>
                    <button class="h-btn mn"><span></span><span></span></button>
                    <a href="#" class="h-order"><span>Заказать</span></a>
@@ -79,10 +79,10 @@
         <div class="page_pers-top">
            <div class="container">
                <div class="row">
-                   <div class="col-12 col-md-6">
+                   <div class="col-12 col-lg-6 order-1 order-lg-1">
                        <div class="page_pers-top-ttl">Личный кабинет</div>
                    </div>
-                   <div class="col-12 col-md-6">
+                   <div class="col-12 col-lg-6 order-7 order-lg-2">
                        <div class="page_pers-top-ord">
                           <input type="hidden" id="cnt" value="200000">
                            <div class="page_pers-top-ord-line">
@@ -117,27 +117,141 @@
                         });
                        </script>
                    </div>
-                   <div class="col-12 col-md-5">
+                   <div class="col-12 col-lg-4 order-6 order-lg-3">
                        <div class="page_pers-top-ooo">ООО «КирпичСтрой»</div>
                    </div>
-                   <div class="col-12 col-md-7">
+                   <div class="col-12 col-lg-8 order-5 order-lg-4">
                        <div class="page_pers-top-btns">
+                           <button class="page_pers-top-mob-btn"><span>Заказать</span></button>
                            <button class="page_pers-top-btn">Сделать заказ</button>
                            <button class="page_pers-top-btn2">Индивидуальное предложение</button>
                        </div>
                    </div>
-                   <div class="col-12">
+                   <div class="col-12 order-2 order-lg-5">
                        <div class="page_pers-top-sep"></div>
                    </div>
-                   <div class="col-12 col-md-6">
+                   <div class="col-12 col-lg-6 order-3 order-lg-6">
                        <div class="page_pers-top-adr">Москва, проспет Такой-то д. 24, оффис 153, корп. 2</div>
                    </div>
-                   <div class="col-12 col-md-6">
+                   <div class="col-12 col-lg-6 order-4 order-lg-7">
                         <div class="page_pers-top-info">
                             <a href="tel:88002017007">8 800 201-70-07</a>
                             <span></span>
                             <a href="mailto:info@yobrand.ru">info@yobrand.ru</a>
                         </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="page_pers-cont">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12">
+                       <div class="page_pers-ttl">Мои Заказы</div>
+                   </div>
+                   <div class="col-12 col-lg-6">
+                       <div class="page_pers-diz">
+                           <div class="page_pers-diz-top">
+                               <div class="page_pers-diz-ttl">Дизайн сайта</div>
+                               <div class="page_pers-diz-price">50 000 <span class="rub"><img src="img/rubl.gif" alt=""></span></div>
+                           </div>
+                           <input type="hidden" id="prs" value="20">
+                           <div class="page_pers-diz-line">
+                               <div class="page_pers-diz-line-fill">
+                                   <div class="page_pers-diz-line-fill-end">
+                                       <div class="page_pers-diz-line-bl">
+                                           <div class="page_pers-diz-line-cnt">0</div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>    
+                           <script>
+                            $(window).on('load resize', function(){
+                                var ordPrs = $('#prs').val();
+                                $('.page_pers-diz-line-fill').css('width', ordPrs+'%');
+                                $('.page_pers-diz-line-cnt').text(ordPrs+'%');
+                            });
+                           </script>                                                  
+                           <div class="page_pers-diz-status">
+                               <div class="page_pers-diz-status-ttl">Статус</div>
+                               <div class="page_pers-diz-status-txt">Прототипирование главной страницы</div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-12 col-lg-6">
+                       <div class="page_pers-akc">
+                           <div class="page_pers-akc-ttl">Акции на дизайн</div>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <div class="page_pers-sep"></div>
+                   </div>
+                   <div class="col-12">
+                       <div class="page_pers-ttl">Документы</div>
+                   </div>
+                   <div class="col-12">
+                       <div class="page_pers-subttl">Техническое задание</div>
+                       <div class="page_pers-docs">
+                           <button class="page_pers-docs-btn">Счет.pdf</button>
+                           <button class="page_pers-docs-btn">Счет2.pdf</button>
+                       </div>
+                       <div class="page_pers-subttl">Акты выполненных работ</div>
+                       <div class="page_pers-docs">
+                           <button class="page_pers-docs-btn">Акт работ №242.pdf</button>
+                           <button class="page_pers-docs-btn">Акт работ №242.pdf</button>
+                       </div>
+                       <div class="page_pers-subttl">Договор</div>
+                       <div class="page_pers-docs">
+                           <button class="page_pers-docs-btn">Акт работ №242.pdf</button>
+                       </div>
+                       <div class="page_pers-subttl">Счет на оплату</div>
+                       <div class="page_pers-docs">
+                           <button class="page_pers-docs-btn">Счет2.pdf</button>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <div class="page_pers-sep"></div>
+                   </div>
+                   <div class="col-12">
+                       <div class="page_pers-ttl">Доп. документы</div>
+                       <div class="page_pers-subttl">Картинки</div>
+                       <div class="row page_pers-imgs">
+                           <div class="col-12 col-lg-4">
+                               <div class="page_pers-img">
+                                   <img src="img/pers-img.jpg" alt="">
+                                   <div class="page_pers-onhover">
+                                       <button class="page_pers-img-dwnl"></button>
+                                       <button class="page_pers-img-del"></button>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-12 col-lg-4">
+                               <div class="page_pers-img">
+                                   <img src="img/pers-img.jpg" alt="">
+                                   <div class="page_pers-onhover">
+                                       <button class="page_pers-img-dwnl"></button>
+                                       <button class="page_pers-img-del"></button>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-12 col-lg-4">
+                               <div class="page_pers-img">
+                                   <img src="img/pers-img.jpg" alt="">
+                                   <div class="page_pers-onhover">
+                                       <button class="page_pers-img-dwnl"></button>
+                                       <button class="page_pers-img-del"></button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <a href="#" class="page_pers-add">Добавить</a>
+                       <div class="page_pers-subttl">Презентация</div>
+                       <div class="page_pers-pres">
+                           <button class="page_pers-pres-btn">Презентация.pdf</button>
+                           <button class="page_pers-pres-dwnl"></button>
+                           <button class="page_pers-pres-del"></button>
+                       </div>
+                       <a href="#" class="page_pers-add">Добавить</a>
                    </div>
                </div>
            </div>

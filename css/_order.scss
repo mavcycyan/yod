@@ -73,11 +73,13 @@
             &:before {content: '';background: url('../img/arr-nxt.png')no-repeat 50% 50%;width: 64px;height: 64px;border-radius: 50%;position: absolute;top: 0;left: 0;display: block; border: 1px solid #9797974d;}
         }
         &-line {display: none;}
-        &-it input[type="text"] { text-align: center; font-size: 14px; 
-            &[name="name"] {text-align: left;}
-            &[name="phone"] {text-align: left;}
-            &[name="mail"] {text-align: left;}
-        } 
+        &-it { margin: 0 auto 41px;
+            input[type="text"] { text-align: center; font-size: 14px;
+                &[name="name"] {text-align: left;}
+                &[name="phone"] {text-align: left;}
+                &[name="mail"] {text-align: left;}
+            } 
+        }
         &-rass { margin-top: 40px; 
             &-txt { font-size: 14px; } 
             &-chb label { font-size: 14px; margin-top: 10px; }        

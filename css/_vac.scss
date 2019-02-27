@@ -13,7 +13,8 @@
         &-btn { margin-top: 30px; display: block; max-width: 259px; border: 1px solid #9797974d; box-sizing: border-box; border-radius: 32px; background: none; font-size: 16px; padding: 15px 11px; padding-left: 76px; line-height: 1; opacity: 1; position: relative; cursor: pointer; color: #000; @include trans(0.3s);
             &:hover, &:focus {opacity: 0.3; box-shadow: none; outline: 0; text-decoration: none; color: #000; @include trans(0.3s);}
             &:before {content: '';background: url('../img/arr-nxt.png')no-repeat 50% 50%;width: 48px;height: 48px;border-radius: 50%;position: absolute;top: -1px;left: -1px;display: block; border: 1px solid #9797974d;}
-        }        
+        }   
+        &-mob-btn {display: none;}
         &-txt { line-height: 32px; font-size: 20px; color: #979797; margin-top: 40px; } 
         &-list { line-height: 32px; font-size: 20px; margin-top: 40px; 
             ul { list-style: none; margin-top: 27px; 
@@ -50,7 +51,12 @@
             &-num { display: none; } 
             &-top { text-align: center; font-size: 12px; } 
             &-ttl { line-height: 32px; font-size: 20px; text-align: center; color: #000000; } 
-            &-btn { margin: 30px auto 0; } 
+            &-btn { margin: 30px auto 0; display: none; } 
+            &-mob-btn { display: block; color: #000; border-radius: 20px; max-width: 327px; text-align: center;  margin: 30px auto 0; width: 100%; padding: 13px 10px; background: linear-gradient(to top right, #69FFAE, #69C9FF, #9069FF); position: relative; opacity: 1; @include trans(0.3s);
+                &:before { content: ''; width: calc(100% - 2px); height: calc(100% - 2px); top: 1px; left: 1px; background: #fff; display: block; position: absolute; border-radius: 20px;z-index: 1; }
+                span {position: relative; z-index: 2;}
+                &:hover, &:focus {color: #000;text-decoration: none;opacity: 0.5; @include trans(0.3s);}       
+            } 
             &-txt { line-height: 24px; font-size: 14px; text-align: center; } 
             &-list{
                 &-ttl { line-height: 32px; font-size: 20px; text-align: center; } 
