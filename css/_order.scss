@@ -1,5 +1,5 @@
 /*page_order*/
-.page_order {margin-top: 112px;
+.page_order {margin-top: 112px;margin-top: 4vh;position: relative; padding-bottom: 38vh;
     &-top { font-size: 20px; 
         &-gray { opacity: 0.3; display: inline-block; margin-right: 30px; }
         &-step { display: inline-block; }
@@ -18,7 +18,7 @@
         &:before {content: '';background: url('../img/arr-nxt.png')no-repeat 50% 50%;width: 64px;height: 64px;border-radius: 50%;position: absolute;top: 0;left: 0;display: block; border: 1px solid #9797974d;}
     }
     &-mob-btn{display: none;}
-    &-line {height: 15vw;width: 100%;margin-top: 58px;margin-bottom: 124px; position: relative;
+    &-line {height: 15vw;width: 100%; position: relative; margin-bottom: 10vh;position: absolute; bottom: 50px;    z-index: -1;
         svg {position: relative;z-index: 1;}
         span {width: 36px; height: 36px; display: block; border-radius: 50%; background: #fff; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); position: absolute;z-index: 2;
             &:before { content: ''; display: block; border: 1px solid #e6e6e6; width: 14px; height: 14px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }

@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="css/fullpage.css" type="text/css" />
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
 
+  <link rel="stylesheet" href="frames/wow/css/libs/animate.css">
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
 	
@@ -33,26 +40,32 @@
 
 <body class="body-main body-black">
 
-<header>
+<header class="wow fadeIn"  data-wow-delay="3s" data-wow-duration="2s">
    <div class="h-pc">
        <div class="container-fluid">
-           <div class="row">
-               <div class="col-12 col-md-6 col-lg-4">
+            <div class="row">
+               <div class="col-12 col-md-6">
                    <a href="#" class="h-logo">YOD</a>
                </div>
-               <div class="col-12 col-md-6 col-lg-4 col-lg-3">
-                   <div class="h-menu">
-                       <ul>
-                           <li><a href="#">Работы <sup>25</sup></a></li>
-                           <li><a href="#">Услуги <sup>7</sup></a></li>
-                           <li><a href="#">Контакты</a></li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="col-12 col-md-6 col-lg-4 col-lg-3">
-                   <button class="h-auth ath"></button>
-                   <button class="h-btn mn"><span></span><span></span></button>
-                   <a href="#" class="h-order"><span>Заказать</span></a>
+               <div class="col-12 col-md-6">
+                   <div class="row">
+                       <div class="col-12 col-md-6 col-lg-4 col-lg-7">
+                           <div class="h-menu">
+                               <ul>
+                                   <li><a href="#">Работы <sup>25</sup></a></li>
+                                   <li><a href="usl.html">Услуги <sup>7</sup></a></li>
+                                   <li><a href="#">Контакты</a></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-6 col-lg-4 col-lg-5">
+                          <div class="h-r">
+                               <button class="h-auth ath"></button>
+                               <button class="h-btn mn"><span></span><span></span></button>
+                               <a href="#" class="h-order"><span>Заказать</span></a>
+                           </div>
+                       </div>
+                   </div>  
                </div>
            </div>
        </div>
@@ -82,25 +95,39 @@
             <div class="row">
                 <div class="col-12 col-lg-6 offset-lg-6">
                    <div class="main-mob-blocks">
-                        <div class="main-mob-blocks-proj">
+                        <div class="main-mob-blocks-proj fpFadeInDown">
                             <span>52</span>
                             Проекта
                         </div>
-                        <div class="main-mob-blocks-prof">
+                        <div class="main-mob-blocks-prof fpFadeInDown">
                             <span>7</span>
                             Профи
                         </div>
                    </div>
-                    <div class="main-top">YOD <sup>TM</sup></div>
-                    <div class="main-ttl">Брендинговое Агенство</div>
-                    <div class="main-txt"><span>Давайте заполним</span> <a href="#">Бриф +</a></div>
+                    <div class="main-top fpFadeIn">YOD <sup>TM</sup></div>
+                    <div class="main-ttl fpFadeIn">Брендинговое Агенство</div>
+                    <div class="main-txt fpFadeIn"><span>Давайте заполним</span> <a href="#">Бриф +</a></div>
                     <div class="main-btm">
-                        <a href="#" class="main-works"><span></span>Работы</a>
-                        <a href="tel:88002017007" class="main-phn">8 800 201-70-07</a>
+                        <a href="#" class="main-works">
+                            <span class="circle">
+                               <svg id="svg2" width="64 " height="64 " viewBox="0 0 120 120">
+                                  <circle id="back" cx="60" cy="60" r="55"></circle>
+                                  <circle id="shape" transform="rotate(-90 60 60)" cx="60" cy="60" r="55" stroke="url(#grad)"></circle>
+                                  <linearGradient id="grad" x1="0" y1="0%">
+                                    <stop offset="0%" stop-color="#69FF6F" class="stop-1"/>
+                                    <stop offset="50%" stop-color="#69C9FF" class="stop-2"/>
+                                    <stop offset="100%" stop-color="#D869FF" class="stop-2"/>
+                                  </linearGradient>                                  
+                               </svg>
+                               <span class="circle-in fpFadeIn"></span>
+                            </span>
+                            <span class="txt fpFadeInLeft">Работы</span>
+                        </a>
+                        <a href="tel:88002017007" class="main-phn fpFadeInLeft">8 800 201-70-07</a>
                     </div>
                 </div>
             </div>
-            <div class="screen-btm">
+            <div class="screen-btm fpFadeIn">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12  col-md-6 col-lg-3 offset-md-6">
@@ -119,11 +146,11 @@
             </div>
         </div>
         <div class="main-abs">
-            <div class="main-abs-proj">
+            <div class="main-abs-proj fpFadeInUp">
                 <span>52</span>
                 Проекта
             </div>
-            <div class="main-abs-prof">
+            <div class="main-abs-prof fpFadeInUp">
                 <span>7</span>
                 Профи
             </div>
@@ -192,8 +219,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 offset-lg-6">
-                    <div class="design-top">Услуги</div>
-                     <div class="design-mob-side">
+                    <div class="design-top fpFadeIn">Услуги</div>
+                     <div class="design-mob-side fpFadeIn">
                          <ul>
                              <li><a href="#">Брендинг</a></li>
                              <li><a href="#">Маркетинг и продвижение</a></li>
@@ -201,13 +228,27 @@
                              <li><a href="#">Дизайн</a></li>
                          </ul>
                      </div>                    
-                    <div class="design-ttl">Дизайн</div>
+                    <div class="design-ttl fpFadeIn">Дизайн</div>
                     <div class="design-btm">
-                        <a href="#" class="design-works"><span></span>Подробнее</a>
+                        <a href="#" class="design-works">
+                            <span class="circle">
+                               <svg id="svg2" width="64 " height="64 " viewBox="0 0 120 120">
+                                  <circle id="back" cx="60" cy="60" r="55"></circle>
+                                  <circle id="shape" transform="rotate(-90 60 60)" cx="60" cy="60" r="55" stroke="url(#grad)"></circle>
+                                  <linearGradient id="grad" x1="0" y1="0%">
+                                    <stop offset="0%" stop-color="#69FF6F" class="stop-1"/>
+                                    <stop offset="50%" stop-color="#69C9FF" class="stop-2"/>
+                                    <stop offset="100%" stop-color="#D869FF" class="stop-2"/>
+                                  </linearGradient>                                  
+                               </svg>
+                               <span class="circle-in fpFadeIn"></span>
+                            </span>
+                            <span class="txt fpFadeInLeft">Работы</span>
+                        </a>                        
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
-                     <div class="design-side">
+                     <div class="design-side fpFadeIn">
                          <ul>
                              <li><a href="#">Брендинг</a></li>
                              <li><a href="#">Маркетинг и продвижение</a></li>
@@ -280,10 +321,24 @@
                    </div>
                 </div> 
                 <div class="col-12 col-lg-6">
-                    <div class="vac-top">YOD <sup>TM</sup></div>                   
-                    <div class="vac-ttl">Вакансии</div>
+                    <div class="vac-top fpFadeIn">YOD <sup>TM</sup></div>                   
+                    <div class="vac-ttl fpFadeIn">Вакансии</div>
                     <div class="vac-btm">
-                        <a href="#" class="vac-works"><span></span>Смотреть</a>
+                        <a href="#" class="vac-works">
+                            <span class="circle">
+                               <svg id="svg2" width="64 " height="64 " viewBox="0 0 120 120">
+                                  <circle id="back" cx="60" cy="60" r="55"></circle>
+                                  <circle id="shape" transform="rotate(-90 60 60)" cx="60" cy="60" r="55" stroke="url(#grad)"></circle>
+                                  <linearGradient id="grad" x1="0" y1="0%">
+                                    <stop offset="0%" stop-color="#69FF6F" class="stop-1"/>
+                                    <stop offset="50%" stop-color="#69C9FF" class="stop-2"/>
+                                    <stop offset="100%" stop-color="#D869FF" class="stop-2"/>
+                                  </linearGradient>                                  
+                               </svg>
+                               <span class="circle-in fpFadeIn"></span>
+                            </span>
+                            <span class="txt fpFadeInLeft">Работы</span>
+                        </a> 
                     </div>
                 </div>                
             </div>
@@ -510,8 +565,27 @@
             </defs>
         </svg>
     </div>
+</div>    
+<div id="post_prldr" style="display:none;">
+    <div class="contpost">
+        <div class="contpost-wp">
+            <span class="contpost-one"></span>
+            <span class="contpost-two"></span>
+            <span class="contpost-three"></span>
+        </div>
+    </div>
 </div>
 
+<script>
+$('.h-menu a').click(function(e){
+    var link = $(this).attr('href');
+    if(link.indexOf('#') == -1){
+        e.preventDefault();
+        $('#post_prldr').fadeIn();
+        setTimeout(function(){location = link}, 3000);        
+    }
+});
+</script>
 
 <script>
 $('.screen-btm-lang').click(function(){
@@ -560,6 +634,19 @@ $(document).ready(function() {
 });
 </script>
 
+  <script src="frames/wow/dist/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+  </script> 
 
 <script type="text/javascript" src="js/fullpage.js"></script>
 
@@ -590,6 +677,45 @@ if($(window).width() > 1199){
         });
     }
     arrChng();
+    
+    function svgAnim(){
+        $('.circle').removeClass('on-screen');
+        if(window.location.hash == '#main'){
+            $('.main-works .circle').addClass('on-screen');
+        }
+        if(window.location.hash == '#design'){
+            $('.design-works .circle').addClass('on-screen');
+        }
+        if(window.location.hash == '#vac'){
+            $('.vac-works .circle').addClass('on-screen');
+        }
+    }
+    svgAnim();
+    
+    function wowCustom(){
+        $('.fpFadeIn').removeClass('on');
+        $('.fpFadeInLeft').removeClass('on');
+        $('.fpFadeInDown').removeClass('on');
+        $('.fpFadeInUp').removeClass('on');
+        if(window.location.hash == '#main'){
+            $('.main .fpFadeIn').addClass('on');
+            $('.main .fpFadeInLeft').addClass('on');
+            $('.main .fpFadeInDown').addClass('on');
+            $('.main .fpFadeInUp').addClass('on');
+        }
+        if(window.location.hash == '#design'){
+            $('.design .fpFadeIn').addClass('on');
+            $('.design .fpFadeInLeft').addClass('on');
+            $('.design .fpFadeInDown').addClass('on');
+            $('.design .fpFadeInUp').addClass('on');
+        }
+        if(window.location.hash == '#vac'){
+            $('.vac .fpFadeIn').addClass('on');
+            $('.vac .fpFadeInLeft').addClass('on');
+            $('.vac .fpFadeInDown').addClass('on');
+            $('.vac .fpFadeInUp').addClass('on');
+        }        
+    }
     
     var myFullpage = new fullpage('#fullpage', {
         //Навигация
@@ -652,6 +778,8 @@ if($(window).width() > 1199){
         onLeave: function(origin, destination, direction){},
         afterLoad: function(origin, destination, direction){
             arrChng();
+            svgAnim();
+            wowCustom();
         },
         afterRender: function(){},
         afterResize: function(width, height){},
@@ -661,8 +789,8 @@ if($(window).width() > 1199){
     });
 }    
 </script>
-
-
+   
+    
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
 <script type="text/javascript" src="js/main.js"></script>
 
