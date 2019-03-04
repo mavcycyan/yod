@@ -20,7 +20,7 @@
             } 
             &.on-screen {
                 #svg2 {
-                    #shape { animation: circle_stroke 4s ease-in forwards; }             
+                    #shape { animation: circle_stroke 2s ease-in forwards; }             
                 } 
             }
             @keyframes circle_stroke { 0% { stroke-dashoffset: 628; } 100% { stroke-dashoffset: 0; } }
@@ -137,7 +137,7 @@
 .design {/*padding-top: 320px; padding-top: 16.7vw;*/ /*padding-bottom: 140px;*/min-height: 100vh; background: url(../img/spot2.svg) no-repeat 0% 50%, url("../img/design-back.png") no-repeat 0% 50%; position: relative; overflow: hidden;
     &-overl {position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;background: #000; opacity: 0.5;}
     &-bg2 {background: url("../img/main-back2.png") no-repeat 78% 81%;position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;}
-    &-top { font-size: 30px; opacity: 0.3; }
+    &-top { font-size: 30px; color: #ffffff4d; }
     &-ttl { font-size: 64px; margin-top: 23px;font-size: 3.3vw; }
     &-txt { font-size: 20px; margin-top: 52px; 
         span {opacity: 0.3; }
@@ -154,7 +154,7 @@
             } 
             &.on-screen {
                 #svg2 {
-                    #shape { animation: circle_stroke 4s ease-in forwards; }             
+                    #shape { animation: circle_stroke 2s ease-in forwards; }             
                 } 
             }
             @keyframes circle_stroke { 0% { stroke-dashoffset: 628; } 100% { stroke-dashoffset: 0; } }
@@ -209,7 +209,7 @@
     .fp-tableCell { background: url(../img/spot2.svg) no-repeat 0% 50%, url(../img/spot3.svg) no-repeat 50% 90%; }
     &-overl {position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;background: #000; opacity: 0.5;}
     &-bg2 {background: url("../img/main-back2.png") no-repeat 78% 81%;position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;}
-    &-top { font-size: 30px; opacity: 0.3; }
+    &-top { font-size: 30px; color: #ffffff4d; }
     &-ttl { font-size: 64px; margin-top: 23px;font-size: 3.3vw; }
     &-txt { font-size: 20px; margin-top: 52px; 
         span {opacity: 0.3; }
@@ -226,7 +226,7 @@
             } 
             &.on-screen {
                 #svg2 {
-                    #shape { animation: circle_stroke 4s ease-in forwards; }             
+                    #shape { animation: circle_stroke 2s ease-in forwards; }             
                 } 
             }
             @keyframes circle_stroke { 0% { stroke-dashoffset: 628; } 100% { stroke-dashoffset: 0; } }
@@ -365,6 +365,8 @@
 }
 
 /*custom_anims*/
+
+/*-fpFadeIn-*/
 @-webkit-keyframes fpFadeIn {
   0% {
     opacity: 0;
@@ -389,11 +391,13 @@
     opacity: 0;
 }
 .fpFadeIn.on {
-  -webkit-animation: fpFadeIn 2s ease-in forwards;
-  animation: fpFadeIn 2s ease-in forwards;
-  animation-delay: 3s;
+  -webkit-animation: fpFadeIn 1s ease-in forwards;
+  animation: fpFadeIn 1s ease-in forwards;
+  animation-delay: 1.5s;
 }
+/*-fpFadeIn-*/
 
+/*-fpFadeInDown-*/
 @-webkit-keyframes fpFadeInDown {
   0% {
     opacity: 0;
@@ -427,11 +431,13 @@
     opacity: 0;
 }
 .fpFadeInDown.on {
-  -webkit-animation: fadeInDown 2s ease-in forwards;
-  animation: fadeInDown 2s ease-in forwards;
-  animation-delay: 3s;
+  -webkit-animation: fadeInDown 1s ease-in forwards;
+  animation: fadeInDown 1s ease-in forwards;
+  animation-delay: 1.5s;
 }
+/*-fadeInDown-*/
 
+/*-fpFadeInLeft-*/
 @-webkit-keyframes fpFadeInLeft {
   0% {
     opacity: 0;
@@ -461,17 +467,37 @@
     transform: translateX(0);
   }
 }
+@keyframes fpFadeInLeftO {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
 
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
 
 .fpFadeInLeft {
     opacity: 0;
 }
 .fpFadeInLeft.on {
-  -webkit-animation: fpFadeInLeft 2s ease-in forwards;
-  animation: fpFadeInLeft 2s ease-in forwards;
-  animation-delay: 3s;
+  -webkit-animation: fpFadeInLeft 1s ease-in forwards;
+  animation: fpFadeInLeft 1s ease-in forwards;
+  animation-delay: 1.5s;
+  animation-direction: normal;
 }
+.fpFadeInLeft.on.off {
+  animation: fpFadeInLeftO 1s ease-in forwards;
+}
+/*-fpFadeInLeft-*/
 
+/*-fpFadeInUp-*/
 @-webkit-keyframes fpFadeInUp {
   0% {
     opacity: 0;
@@ -501,13 +527,91 @@
     transform: translateY(0);
   }
 }
+@keyframes fpFadeInUpO {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
 
 .fpFadeInUp {
     opacity: 0;
 }
 .fpFadeInUp.on {
-  -webkit-animation: fpFadeInUp 2s ease-in forwards;
-  animation: fpFadeInUp 2s ease-in forwards;
-  animation-delay: 3s;
+  -webkit-animation: fpFadeInUp 1s ease-in forwards;
+  animation: fpFadeInUp 1s ease-in forwards;
+  animation-delay: 1.5s;
 }
+.fpFadeInUp.on.off {
+  animation: fpFadeInUpO 1s ease-in forwards;
+}
+/*-fpFadeInUp-*/
+
+/*-fpFadeInRight-*/
+@-webkit-keyframes fpFadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fpFadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fpFadeInRightO {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+.fpFadeInRight {
+    opacity: 0;
+}
+.fpFadeInRight.on {
+  -webkit-animation: fpFadeInRight 1s ease-in forwards;
+  animation: fpFadeInRight 1s ease-in forwards;
+  animation-delay: 1.5s;
+}
+.fpFadeInRight.on.off {
+  animation: fpFadeInRightO 1s ease-in forwards;
+}
+/*-fpFadeInRight-*/
 /*custom_anims*/

@@ -121,9 +121,9 @@
                                </svg>
                                <span class="circle-in fpFadeIn"></span>
                             </span>
-                            <span class="txt fpFadeInLeft">Работы</span>
+                            <span class="txt fpFadeInRight">Работы</span>
                         </a>
-                        <a href="tel:88002017007" class="main-phn fpFadeInLeft">8 800 201-70-07</a>
+                        <a href="tel:88002017007" class="main-phn fpFadeInRight">8 800 201-70-07</a>
                     </div>
                 </div>
             </div>
@@ -220,7 +220,7 @@
             <div class="row">
                 <div class="col-12 col-lg-3 offset-lg-6">
                     <div class="design-top fpFadeIn">Услуги</div>
-                     <div class="design-mob-side fpFadeIn">
+                     <div class="design-mob-side fpFadeInRight">
                          <ul>
                              <li><a href="#">Брендинг</a></li>
                              <li><a href="#">Маркетинг и продвижение</a></li>
@@ -228,7 +228,7 @@
                              <li><a href="#">Дизайн</a></li>
                          </ul>
                      </div>                    
-                    <div class="design-ttl fpFadeIn">Дизайн</div>
+                    <div class="design-ttl fpFadeInRight">Дизайн</div>
                     <div class="design-btm">
                         <a href="#" class="design-works">
                             <span class="circle">
@@ -243,12 +243,12 @@
                                </svg>
                                <span class="circle-in fpFadeIn"></span>
                             </span>
-                            <span class="txt fpFadeInLeft">Работы</span>
+                            <span class="txt fpFadeInRight">Работы</span>
                         </a>                        
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
-                     <div class="design-side fpFadeIn">
+                     <div class="design-side fpFadeInLeft">
                          <ul>
                              <li><a href="#">Брендинг</a></li>
                              <li><a href="#">Маркетинг и продвижение</a></li>
@@ -321,8 +321,8 @@
                    </div>
                 </div> 
                 <div class="col-12 col-lg-6">
-                    <div class="vac-top fpFadeIn">YOD <sup>TM</sup></div>                   
-                    <div class="vac-ttl fpFadeIn">Вакансии</div>
+                    <div class="vac-top fpFadeInRight">YOD <sup>TM</sup></div>                   
+                    <div class="vac-ttl fpFadeInRight">Вакансии</div>
                     <div class="vac-btm">
                         <a href="#" class="vac-works">
                             <span class="circle">
@@ -337,7 +337,7 @@
                                </svg>
                                <span class="circle-in fpFadeIn"></span>
                             </span>
-                            <span class="txt fpFadeInLeft">Работы</span>
+                            <span class="txt fpFadeInRight">Работы</span>
                         </a> 
                     </div>
                 </div>                
@@ -693,29 +693,40 @@ if($(window).width() > 1199){
     svgAnim();
     
     function wowCustom(){
-        $('.fpFadeIn').removeClass('on');
-        $('.fpFadeInLeft').removeClass('on');
-        $('.fpFadeInDown').removeClass('on');
-        $('.fpFadeInUp').removeClass('on');
+        $('.fpFadeIn').removeClass('on').removeClass('off');
+        $('.fpFadeInLeft').removeClass('on').removeClass('off');
+        $('.fpFadeInDown').removeClass('on').removeClass('off');
+        $('.fpFadeInUp').removeClass('on').removeClass('off');
+        $('.fpFadeInRight').removeClass('on').removeClass('off');
         if(window.location.hash == '#main'){
             $('.main .fpFadeIn').addClass('on');
             $('.main .fpFadeInLeft').addClass('on');
             $('.main .fpFadeInDown').addClass('on');
             $('.main .fpFadeInUp').addClass('on');
+            $('.main .fpFadeInRight').addClass('on');
         }
         if(window.location.hash == '#design'){
             $('.design .fpFadeIn').addClass('on');
             $('.design .fpFadeInLeft').addClass('on');
             $('.design .fpFadeInDown').addClass('on');
             $('.design .fpFadeInUp').addClass('on');
+            $('.design .fpFadeInRight').addClass('on');
         }
         if(window.location.hash == '#vac'){
             $('.vac .fpFadeIn').addClass('on');
             $('.vac .fpFadeInLeft').addClass('on');
             $('.vac .fpFadeInDown').addClass('on');
             $('.vac .fpFadeInUp').addClass('on');
+            $('.vac .fpFadeInRight').addClass('on');
         }        
     }
+    
+    function wowCustom2(){
+            $('.on').addClass('off');
+            $('.on').addClass('off');
+            $('.on').addClass('off');
+            $('.on').addClass('off');    
+    }    
     
     var myFullpage = new fullpage('#fullpage', {
         //Навигация
@@ -729,13 +740,13 @@ if($(window).width() > 1199){
 
         //Скроллинг
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 1500,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
         scrollBar: false,
         easing: 'easeInOutCubic',
-        easingcss3: 'ease',
+        easingcss3: 'cubic-bezier(0.755, 0.015, 0.755, 0.085)',
         loopBottom: false,
         loopTop: false,
         loopHorizontal: true,
@@ -775,7 +786,9 @@ if($(window).width() > 1199){
         lazyLoading: true,
 
         //события
-        onLeave: function(origin, destination, direction){},
+        onLeave: function(origin, destination, direction){
+            wowCustom2();
+        },
         afterLoad: function(origin, destination, direction){
             arrChng();
             svgAnim();
