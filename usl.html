@@ -18,6 +18,13 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
 	
+  <link rel="stylesheet" href="frames/wow/css/libs/animate.css">
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>	
+	
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -94,7 +101,7 @@
                 <div class="page_usl-txt">
                     Создание бренда включает в себя обширный перечень процедур, начиная от анализа рынка,построения общей стратегии до подготовки визуальных материалов (разработки логотипа,фирменного стиля, pos материалов) и итоговой оценки эффективности. Мы имеем богатый опыт в данной сфере, профессионально работая во всех существующих направлениях брендинга.
                 </div>
-                <div class="page_usl-cont">
+                <div id="counts" class="page_usl-cont">
                     <div class="page_usl-bl">
                         <div class="page_usl-bl-num">52</div>
                         <div class="page_usl-bl-txt">Проекта</div>
@@ -115,10 +122,10 @@
             </div>
             <div class="page_usl-cont">
                 <div class="row">
-                    <div class="col-12 col-md-6 order-md-2">
+                    <div class="col-12 col-md-6 order-md-2 wow fadeInRight"  data-wow-delay="1s" data-wow-duration="2s">
                         <div class="page_usl-img"><img src="img/page_usl-img.png" alt=""></div>
                     </div>
-                    <div class="col-12 col-md-6 order-md-1">
+                    <div class="col-12 col-md-6 order-md-1 wow fadeInLeft"  data-wow-delay="1s" data-wow-duration="2s">
                         <div class="page_usl-scnd">
                             <div class="page_usl-scnd-ttl">GS AGRO</div>
                             <div class="page_usl-scnd-txt">
@@ -131,10 +138,10 @@
             </div>
             <div class="page_usl-cont">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 wow fadeInLeft"  data-wow-delay="1s" data-wow-duration="2s">
                         <div class="page_usl-img"><img src="img/page_usl-img.png" alt=""></div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 wow fadeInRight"  data-wow-delay="1s" data-wow-duration="2s">
                         <div class="page_usl-scnd">
                             <div class="page_usl-scnd-ttl">GS AGRO</div>
                             <div class="page_usl-scnd-txt">
@@ -343,6 +350,63 @@
         <div class="contpost-wp"></div>
     </div>
 </div>
+<script type="text/javascript" src="js/jquery.spincrement.min.js"></script>
+<script>
+    
+$(document).ready(function(){
+    var show = true;
+    var countbox = "#counts";
+    $(window).on("scroll load resize", function(){
+		var w_top = $(window).scrollTop(); 
+		var e_top = $(countbox).offset().top;  
+
+		var w_height = $(window).height();      
+		var d_height = $(document).height();   
+
+		var c_height = $(countbox).height();
+
+		var e_height = $(countbox).outerHeight();		
+		function Something(){
+			if(!show) return false;  
+
+ 
+			$('.page_usl-bl-num').css('opacity', '0');
+			if(w_top+w_height >= e_top+150 && w_top < e_top+c_height+150){
+
+				$(".page_usl-bl-num").spincrement({
+					from: 0,
+					thousandSeparator: "",
+					duration: 1500,
+					easing:  "linear"                
+				});
+
+				show = false;
+			}			
+		}
+		Something();
+		if(w_top > e_top+c_height+150){
+			show = true;
+		}
+		if(w_top+w_height < e_top+150){
+			show = true;
+		}		
+    });
+});    
+</script>
+
+  <script src="frames/wow/dist/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+  </script> 
 
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
 <script type="text/javascript" src="js/main.js"></script>

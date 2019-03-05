@@ -87,8 +87,8 @@
                <div class="row">
                    <div class="col-12 col-md-6 col-lg-7">
                         <div class="page_vac-ttl">Вакансии</div>
-                        <div class="page_vac-vacs active" id="vac1">
-                            <div class="page_vac-bl">
+                        <div class="page_vac-vacs active">
+                            <div class="page_vac-bl" id="vac1">
                                <div class="page_vac-bl-mob-num">01</div>
                                 <div class="page_vac-bl-top">Креативный и амбициозный</div>
                                 <div class="page_vac-bl-ttl">
@@ -112,7 +112,7 @@
                                     Имидж компании начинается с ее порога,<br>и дизайн логотипов является практически<br>основой. Узнаваемый торговый знак<br>с большой вероятностью всплывет в памяти<br>в самый подходящий момент.
                                 </div>
                             </div>
-                            <div class="page_vac-bl">
+                            <div class="page_vac-bl" id="vac2">
                                <div class="page_vac-bl-mob-num">02</div>
                                 <div class="page_vac-bl-top">Junior / Middle / Senjor</div>
                                 <div class="page_vac-bl-ttl">
@@ -136,10 +136,55 @@
                                     Почему мы любим хорошие заказы:<br>Работа «с нуля», учитывая особенности<br>заказчика, ориентируемся на мировых<br>лидеров рынка
                                 </div>
                             </div>
-                        </div>
-                       <div class="page_vac-vacs" id="vac2"></div>                  
-                       <div class="page_vac-vacs" id="vac3"></div>                  
-                       <div class="page_vac-vacs" id="vac4"></div>                  
+                            <div class="page_vac-bl" id="vac3">
+                               <div class="page_vac-bl-mob-num">03</div>
+                                <div class="page_vac-bl-top">HR</div>
+                                <div class="page_vac-bl-ttl">
+                                   HR
+                                   <div class="page_vac-bl-num">03</div>
+                               </div>
+                                <a href="#" class="page_vac-bl-btn">Отправить резюме</a>
+                                <a href="#" class="page_vac-bl-mob-btn"><span>Отправить резюме</span></a>
+                                <div class="page_vac-bl-txt">
+                                    Почему мы любим хорошие заказы:<br>Работа «с нуля», учитывая особенности<br>заказчика, ориентируемся на мировых<br>лидеров рынка
+                                </div>
+                                <div class="page_vac-bl-list">
+                                    <div class="page_vac-bl-list-ttl">Требования</div>
+                                    <ul>
+                                        <li>Имидж компании начинается</li>
+                                        <li>Начинается компании</li>
+                                        <li>Имидж компании начинается</li>
+                                    </ul>
+                                </div>
+                                <div class="page_vac-bl-txt">
+                                    Почему мы любим хорошие заказы:<br>Работа «с нуля», учитывая особенности<br>заказчика, ориентируемся на мировых<br>лидеров рынка
+                                </div>
+                            </div>
+                            <div class="page_vac-bl" id="vac4">
+                               <div class="page_vac-bl-mob-num">04</div>
+                                <div class="page_vac-bl-top">Manager</div>
+                                <div class="page_vac-bl-ttl">
+                                   Manager
+                                   <div class="page_vac-bl-num">04</div>
+                               </div>
+                                <a href="#" class="page_vac-bl-btn">Отправить резюме</a>
+                                <a href="#" class="page_vac-bl-mob-btn"><span>Отправить резюме</span></a>
+                                <div class="page_vac-bl-txt">
+                                    Почему мы любим хорошие заказы:<br>Работа «с нуля», учитывая особенности<br>заказчика, ориентируемся на мировых<br>лидеров рынка
+                                </div>
+                                <div class="page_vac-bl-list">
+                                    <div class="page_vac-bl-list-ttl">Требования</div>
+                                    <ul>
+                                        <li>Имидж компании начинается</li>
+                                        <li>Начинается компании</li>
+                                        <li>Имидж компании начинается</li>
+                                    </ul>
+                                </div>
+                                <div class="page_vac-bl-txt">
+                                    Почему мы любим хорошие заказы:<br>Работа «с нуля», учитывая особенности<br>заказчика, ориентируемся на мировых<br>лидеров рынка
+                                </div>
+                            </div>
+                        </div>               
                    </div>
                    <div class="col-12 col-md-6 col-lg-5">
                        <div class="page_vac-menu">
@@ -308,12 +353,19 @@
 
 <script>
     $('.page_vac-menu-pnt').click(function(e){
-        e.preventDefault();
+        //e.preventDefault();
         $('.page_vac-menu-pnt').removeClass('active');
         $(this).addClass('active');
-        $('.page_vac-vacs').removeClass('active');
-        $($(this).attr('href')).addClass('active');
+        //$('.page_vac-vacs').removeClass('active');
+        //$($(this).attr('href')).addClass('active');
     });
+</script>
+<script>
+$('.page_vac-menu-pnt').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+return false;
+});    
 </script>
 
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>

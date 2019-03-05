@@ -1,8 +1,10 @@
 /*page_usl*/
-.page_usl {padding-bottom: 60px;background: url('../img/spot4.svg')no-repeat 40% 50px,url('../img/spot2.svg')no-repeat 0% 200px,url('../img/spot1.svg')no-repeat 70% 400px;
+.page_usl {padding-bottom: 60px;background: url('../img/spot4.svg')no-repeat 40% 50px,url('../img/spot2.svg')no-repeat 0% 200px,url('../img/spot1.svg')no-repeat 70% 400px; overflow-x: hidden; overflow-y: visible;
     &-cont {margin-top: 112px;}
     &-ttl { font-size: 64px; line-height: 1; } 
-    &-img {margin-top: 120px;}
+    &-img {margin-top: 120px; position: relative;
+        &:before { content: ''; z-index: -1; width: 560px; height: 460px; background: url('../img/usl-ttl-back.svg')no-repeat; background-size: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    }
     &-sub { font-size: 30px; line-height: 40px; margin-top: 108px; 
         span { color: #69C9FF; }
     }
