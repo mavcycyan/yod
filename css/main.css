@@ -137,6 +137,7 @@ body.body-pers header { position: absolute; }
   .main-txt { display: none; }
   .main-phn { display: none; }
   .main-works { width: 216px; height: 56px; margin: 0 auto; display: block; text-align: center; background: #1A1A1A; border-radius: 28px; font-size: 16px; padding: 15px 10px; }
+  .main-works .circle { display: none; }
   .main-works span { display: none; }
   .main-bg2 { display: none; }
   .main-abs { display: none; }
@@ -216,6 +217,7 @@ body.body-pers header { position: absolute; }
   .design-txt { display: none; }
   .design-phn { display: none; }
   .design-works { width: 216px; height: 56px; margin: 0 auto; display: block; text-align: center; background: #1A1A1A; border-radius: 28px; font-size: 16px; padding: 15px 10px; }
+  .design-works .circle { display: none; }
   .design-works span { display: none; }
   .design-bg2 { display: none; }
   .design-abs { display: none; }
@@ -267,6 +269,7 @@ body.body-pers header { position: absolute; }
   .vac-txt { display: none; }
   .vac-phn { display: none; }
   .vac-works { width: 216px; height: 56px; margin: 0 auto; display: block; text-align: center; background: #1A1A1A; border-radius: 28px; font-size: 16px; padding: 15px 10px; }
+  .vac-works .circle { display: none; }
   .vac-works span { display: none; }
   .vac-bg2 { display: none; }
   .vac-abs { display: none; }
@@ -380,6 +383,7 @@ body.body-pers header { position: absolute; }
 .fpFadeInRight.on.off { animation: fpFadeInRightO 1s ease-in forwards; }
 
 /*-fpFadeInRight-*/
+@media (max-width: 1199px) { .fpFadeIn, .fpFadeInDown, .fpFadeInLeft, .fpFadeInUp, .fpFadeInRight { opacity: 1; transform: translate(0, 0); } }
 /*custom_anims*/
 /* font-family: "BrutalType-Regular"; */
 @font-face { font-family: "BrutalType"; src: url("../fonts/BrutalType-Regular/BrutalType-Regular.eot"); src: url("../fonts/BrutalType-Regular/BrutalType-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BrutalType-Regular/BrutalType-Regular.woff") format("woff"), url("../fonts/BrutalType-Regular/BrutalType-Regular.ttf") format("truetype"); font-style: normal; font-weight: normal; }
