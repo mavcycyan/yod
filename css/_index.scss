@@ -135,11 +135,18 @@
 }
 
 /*design*/
-.design {/*padding-top: 320px; padding-top: 16.7vw;*/ /*padding-bottom: 140px;*/min-height: 100vh; background: url(../img/spot2.svg) no-repeat 0% 50%, url("../img/design-back.png") no-repeat 0% 50%; position: relative; overflow: hidden;
+.design {/*padding-top: 320px; padding-top: 16.7vw;*/ /*padding-bottom: 140px;*/min-height: 100vh; background: url(../img/spot2.svg) no-repeat 0% 50%/*, url("../img/design-back.png") no-repeat 0% 50%*/; position: relative; overflow: hidden;
+    &-backImg {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        &-bl {opacity: 0;@include trans(0.3s); position: absolute; top: 0;left: 0;width: 100%;height: 100%;
+            &.active {opacity: 1;@include trans(0.3s);}
+        }
+    }
     &-overl {position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;background: #000; opacity: 0.5;}
     &-bg2 {background: url("../img/main-back2.png") no-repeat 78% 81%;position: absolute;top: 0;left: 0;min-width: 100vw;min-height: 100%;}
     &-top { font-size: 30px; color: #ffffff4d; }
-    &-ttl { font-size: 64px; margin-top: 23px;font-size: 3.3vw; }
+    &-ttl { font-size: 64px; margin-top: 23px;font-size: 3.3vw; color: #fff; 
+        &:hover, &:focus {color: #fff;}
+    }
     &-txt { font-size: 20px; margin-top: 52px; 
         span {opacity: 0.3; }
         a {color: #fff; 

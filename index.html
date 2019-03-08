@@ -214,6 +214,20 @@
         </div>
     </div>   
     <div class="design section ">
+      <div class="design-backImg">
+          <div id="diz-img4" class="design-backImg-bl active">
+              <img src="img/design-back.png" alt="">
+          </div>
+          <div id="diz-img1" class="design-backImg-bl">
+              <img src="img/design1.png" alt="">
+          </div>
+          <div id="diz-img2" class="design-backImg-bl">
+              <img src="img/design2.png" alt="">
+          </div>
+          <div id="diz-img3" class="design-backImg-bl">
+              <img src="img/design3.png" alt="">
+          </div>
+      </div>
        <div class="design-overl"></div>
        <div class="design-bg2"></div>
         <div class="container">
@@ -222,13 +236,13 @@
                     <div class="design-top fpFadeIn">Услуги</div>
                      <div class="design-mob-side fpFadeInRight">
                          <ul>
-                             <li><a href="#">Брендинг</a></li>
-                             <li><a href="#">Маркетинг и продвижение</a></li>
-                             <li><a href="#">Разработка</a></li>
-                             <li><a href="#">Дизайн</a></li>
+                             <li><a href="#diz-img1" class="dizClck">Брендинг</a></li>
+                             <li><a href="#diz-img2" class="dizClck">Маркетинг и продвижение</a></li>
+                             <li><a href="#diz-img3" class="dizClck">Разработка</a></li>
+                             <li><a href="#diz-img4" class="dizClck">Дизайн</a></li>
                          </ul>
                      </div>                    
-                    <div class="design-ttl fpFadeInRight">Дизайн</div>
+                    <a href="#diz-img4" class="design-ttl fpFadeInRight dizClck">Дизайн</a>
                     <div class="design-btm">
                         <a href="#" class="design-works">
                             <span class="circle">
@@ -250,14 +264,21 @@
                 <div class="col-12 col-lg-3">
                      <div class="design-side fpFadeInLeft">
                          <ul>
-                             <li><a href="#">Брендинг</a></li>
-                             <li><a href="#">Маркетинг и продвижение</a></li>
-                             <li><a href="#">Разработка</a></li>
-                             <li><a href="#">Дизайн</a></li>
+                             <li><a href="#diz-img1" class="dizClck">Брендинг</a></li>
+                             <li><a href="#diz-img2" class="dizClck">Маркетинг и продвижение</a></li>
+                             <li><a href="#diz-img3" class="dizClck">Разработка</a></li>
+                             <li><a href="#diz-img4" class="dizClck">Дизайн</a></li>
                          </ul>
                      </div>
                 </div>                
             </div>
+            <script>
+                $('.dizClck').click(function(e){
+                    e.preventDefault();
+                    $('.design-backImg-bl').removeClass('active');
+                    $($(this).attr('href')).addClass('active');
+                });
+            </script>
             <div class="screen-btm">
                 <div class="container-fluid">
                     <div class="row">
