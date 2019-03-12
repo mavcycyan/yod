@@ -151,8 +151,8 @@ body.body-pers header { position: absolute; }
 .works { /*padding-top: 320px; padding-top: 16.7vw;*/ /*padding-bottom: 140px;*/ min-height: 100vh; position: relative; overflow: hidden; background: url(../img/spot1.svg) no-repeat 20% 0%, url(../img/main-back2.png) no-repeat 70% 90%; }
 .works-ttl { font-size: 1.6vw; }
 .works-tabs { text-align: center; }
-.works-tabs-tab { font-size: 1.6vw; opacity: 0.3; display: inline-block; margin: 0 15px; }
-.works-tabs-tab:hover, .works-tabs-tab:focus { opacity: 1; }
+.works-tabs-tab { font-size: 1.6vw; opacity: 0.3; display: inline-block; margin: 0 15px; color: #fff; }
+.works-tabs-tab:hover, .works-tabs-tab:focus, .works-tabs-tab.active { opacity: 1; color: #fff; text-decoration: none; }
 .works-tabs-tab:first-child { margin-left: 0; }
 .works-tabs-tab:last-child { margin-right: 0; }
 .works-soc { text-align: right; margin-right: 14px; }
@@ -160,7 +160,8 @@ body.body-pers header { position: absolute; }
 .works-soc a.one { background: url("../img/works-soc1.svg") no-repeat; background-size: contain; }
 .works-soc a.two { background: url("../img/works-soc2.svg") no-repeat; background-size: contain; }
 .works-soc a:hover, .works-soc a:focus { opacity: 1; }
-.works-sl { margin-top: 6vw; }
+.works-sl-cnt { height: 0; overflow: hidden; }
+.works-sl-cnt.active { height: auto; margin-top: 6vw; }
 .works-mob-soc { display: none; }
 
 /*works*/

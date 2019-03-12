@@ -165,10 +165,10 @@
                <div class="col-12 col-md-6 col-6">
                    <div class="works-tabs-wp">
                        <div class="works-tabs">
-                           <div id="tab1" class="works-tabs-tab">Дизайн</div>
-                           <div id="tab2" class="works-tabs-tab">Веб-разработка</div>
-                           <div id="tab3" class="works-tabs-tab">Разработка</div>
-                           <div id="tab4" class="works-tabs-tab">Брендинг</div>
+                           <a href="#tab1" class="works-tabs-tab active">Дизайн</a>
+                           <a href="#tab2" class="works-tabs-tab">Веб-разработка</a>
+                           <a href="#tab3" class="works-tabs-tab">Разработка</a>
+                           <a href="#tab4" class="works-tabs-tab">Брендинг</a>
                        </div>
                    </div>
                </div>
@@ -181,11 +181,29 @@
            </div>
        </div>
        <div class="container-fluid">
-           <div class="works-sl">
-               <ul id="works-sl">
+           <div id="tab1" class="works-sl-cnt active">
+               <ul class="works-sl">
                    <li><img src="img/works-sl1.jpg" alt=""></li>
                    <li><img src="img/works-sl2.jpg" alt=""></li>
                    <li><img src="img/works-sl1.jpg" alt=""></li>
+                   <li><img src="img/works-sl1.jpg" alt=""></li>
+                   <li><img src="img/works-sl2.jpg" alt=""></li>
+               </ul>
+           </div>
+           <div id="tab2" class="works-sl-cnt">
+               <ul class="works-sl">
+                   <li><img src="img/works-sl1.jpg" alt=""></li>
+               </ul>
+           </div>
+           <div id="tab3" class="works-sl-cnt">
+               <ul class="works-sl">
+                   <li><img src="img/works-sl2.jpg" alt=""></li>
+                   <li><img src="img/works-sl1.jpg" alt=""></li>
+                   <li><img src="img/works-sl2.jpg" alt=""></li>
+               </ul>
+           </div>
+           <div id="tab4" class="works-sl-cnt">
+               <ul class="works-sl">
                    <li><img src="img/works-sl1.jpg" alt=""></li>
                    <li><img src="img/works-sl2.jpg" alt=""></li>
                </ul>
@@ -195,6 +213,15 @@
                <a href="#" class="two"></a>
            </div>           
        </div>
+       <script>
+            $('.works-tabs-tab').click(function(e){
+                e.preventDefault();
+                $('.works-tabs-tab').removeClass('active');
+                $(this).addClass('active');
+                $('.works-sl-cnt').removeClass('active');
+                $($(this).attr('href')).addClass('active');
+            });
+        </script>
         <div class="screen-btm">
             <div class="container-fluid">
                 <div class="row">
@@ -624,7 +651,7 @@ return false;
 <script type="text/javascript" src="js/lightslider.min.js"></script>
 <script>
 $(document).ready(function() {		
-    $('#works-sl').lightSlider({
+    $('.works-sl').lightSlider({
         item:1,
         auto:false,
         autoWidth:true,
@@ -637,7 +664,7 @@ $(document).ready(function() {
         freeMove:false,
         pager:false, 
         onSliderLoad: function() {
-                $('#works-sl').removeClass('cS-hidden');
+                $('.works-sl').removeClass('cS-hidden');
         },
         responsive : [
         {
