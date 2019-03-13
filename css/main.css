@@ -609,7 +609,8 @@ body.body-pers header { position: absolute; }
   .page_vac-bl-list-ttl { line-height: 32px; font-size: 20px; text-align: center; }
   .page_vac-bl-list ul { padding: 0; }
   .page_vac-bl-list ul li { text-align: center; padding: 0; }
-  .page_vac-bl-list ul li:before { display: none; } }
+  .page_vac-bl-list ul li:before { display: none; }
+  .page_vac-bl p { text-align: center; margin-top: 10px; } }
 /*page_about*/
 .page_about { padding-bottom: 60px; overflow-x: hidden; background: url("../img/spot2.svg") no-repeat 0% 10%; }
 .page_about-cont { margin-top: 112px; }
