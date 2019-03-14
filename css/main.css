@@ -495,6 +495,10 @@ body.body-pers header { position: absolute; }
 /*page_usl*/
 .page_usl { padding-bottom: 60px; background: url("../img/spot4.svg") no-repeat 40% 50px, url("../img/spot2.svg") no-repeat 0% 200px, url("../img/spot1.svg") no-repeat 70% 400px; overflow-x: hidden; overflow-y: visible; }
 .page_usl-cont { margin-top: 112px; }
+.page_usl-menu { position: fixed; top: 100px; right: 50px; background: #fff; padding: 20px; }
+.page_usl-menu ul { list-style: none; margin: 0; padding: 0; }
+.page_usl-menu ul li a { font-size: 1.6vw; color: #000; opacity: 0.3; margin-bottom: 10px; display: block; }
+.page_usl-menu ul li a:hover, .page_usl-menu ul li a:focus, .page_usl-menu ul li a.active { opacity: 1; text-decoration: none; }
 .page_usl-ttl { font-size: 64px; line-height: 1; }
 .page_usl-img { margin-top: 120px; position: relative; }
 .page_usl-img:before { content: ''; z-index: -1; width: 560px; height: 460px; background: url("../img/usl-ttl-back.svg") no-repeat; background-size: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
@@ -543,7 +547,9 @@ body.body-pers header { position: absolute; }
 .page_usl-form-row button:after { content: ''; width: 8px; height: 8px; background: linear-gradient(65.75deg, #69FFAE -14.45%, #69C9FF 51.99%, #9069FF 115.6%); display: block; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); border-radius: 50%; z-index: 3; }
 
 /*page_usl*/
-@media (max-width: 991px) { .page_usl-ttl { font-size: 40px; text-align: center; }
+@media (max-width: 991px) { .page_usl-menu { position: static; text-align: center; background: none; }
+  .page_usl-menu ul li { display: inline-block; vertical-align: middle; margin: 0 8px 10px; }
+  .page_usl-ttl { font-size: 40px; text-align: center; }
   .page_usl-form-row input[type="text"] { border: 1px solid #E3E3E3; background-color: #fff; margin-bottom: 8px; }
   .page_usl-form-row input[type="text"].name { background: url(../img/form-name.png) no-repeat 90% 50%, #fff; }
   .page_usl-form-row input[type="text"].phn { background: url(../img/form-phn.png) no-repeat 90% 50%, #fff; }
